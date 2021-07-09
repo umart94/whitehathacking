@@ -1,0 +1,15 @@
+program a
+
+reverse engineer it into program b
+
+disassemble - 
+
+run
+
+
+x86dis -e 0 -s intel < bufo | less
+
+debugger
+
+gdb bufo
+

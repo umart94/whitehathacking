@@ -1,0 +1,30 @@
+if anyone can access the grub file
+
+the password is in plaintext
+
+we should avoid this..
+
+
+grub-mkpassword-pbkdf2
+
+this asks us for a password
+
+generates a string , that we can use in our file.
+encrypts the password set in grub config for
+the superuser.
+
+
+uses a hash algorithm for e.g sha 512
+
+sudo nano /etc/grub.d/00_header
+
+if we type some wrong password
+then what we can do is use another password
+for superusers
+
+and while checking the wrong password, we can default back to the plaintext one.
+
+and when the hashed password works.
+then remove the plaintext passwords from the grub config file.
+
+

@@ -1,0 +1,21 @@
+which looks for executables and programs
+
+which which
+
+which ls
+
+which perl
+
+which ruby
+
+look for files.
+
+quotes string means dont take it as a literal.
+
+sudo find / -name "*logs*" -print
+
+anytime it finds log inside root directory
+
+find . -name "*[dD]esktop" -print
+
+

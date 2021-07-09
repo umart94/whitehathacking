@@ -1,0 +1,5 @@
+ifconfig - interface config similiar to ipconfig in windows.
+
+ethernet interface
+loopback - used to connect to the current machine itself.
+

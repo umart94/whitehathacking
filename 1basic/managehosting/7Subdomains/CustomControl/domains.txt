@@ -1,0 +1,4 @@
+forward domain will enable us to send user to a completely different website
+
+since we are using home directory
+we will choose home directory - existing directory option

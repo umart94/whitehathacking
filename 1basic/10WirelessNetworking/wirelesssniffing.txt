@@ -1,0 +1,13 @@
+wireshark.
+
+tcpdump
+
+
+sudo airodump-ng mon0
+
+with wireshark we have to be either physically connected (wired) or connected to the wireless network inorder to get wireless access from it..
+
+but airodump grabs all of the packets from the air..
+
+data that can be used to crack WEP.
+

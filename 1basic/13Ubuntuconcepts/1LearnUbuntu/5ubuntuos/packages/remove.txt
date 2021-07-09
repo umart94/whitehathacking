@@ -1,0 +1,6 @@
+sudo apt-get remove xfce
+
+the dependencies packages are not remembered and not uninstalled.
+because we can also remove automatically those packages that we actually needed.
+
+sudo apt-get autoremove xfce

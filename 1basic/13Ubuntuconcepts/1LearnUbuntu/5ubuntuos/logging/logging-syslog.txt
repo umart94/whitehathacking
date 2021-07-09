@@ -1,0 +1,33 @@
+cd /etc
+sudo nano rsyslog.conf
+
+# provides UDP syslog reception
+#module(load="imudp")
+#input(type="imudp" port="514")
+
+# provides TCP syslog reception
+#module(load="imtcp")
+#input(type="imtcp" port="514")
+
+
+these lines and others are commented out
+this gives ubuntu system ability to log on a network, syslog messages coming from other devices.
+
+
+with syslog we have facilities and levels
+auth , authpriv facility - facility is being logged to var/log/auth.log
+
+for different levels ,we can set different logging based on facility.
+
+cd /
+cd var
+cd log
+
+sudo nano kern.log
+sudo nano syslog1,2,3 etc
+
+program called log rotate, that rotates the logs periodically.
+we can keep multiple weeks or days worth of log files.
+
+older ones get zipped up and compressed.
+

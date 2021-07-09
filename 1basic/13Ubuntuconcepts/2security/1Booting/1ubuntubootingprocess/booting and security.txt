@@ -1,0 +1,9 @@
+bios passwords
+bios firmware menu setting
+security setting
+supervisor password
+user password
+hdd password
+password on boot.
+
+even if someone has physical access to a hard disk.. we have enabled password on hard disk.

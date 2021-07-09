@@ -1,0 +1,14 @@
+global replace
+search for string patterns in files or anything that is sent to grep command
+
+grep file * ( * means search anything in current directory)
+
+ps aux | grep bash
+
+apt-cache search apache
+
+apt-cache search apache | grep php
+
+grep extracts only the entries with apache AND php both.
+
+

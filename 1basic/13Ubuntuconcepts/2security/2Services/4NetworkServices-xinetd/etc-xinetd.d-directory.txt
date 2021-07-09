@@ -1,0 +1,56 @@
+controlled by a number of service config files
+character generator - chargen
+datetime
+discard echo
+ftpd
+time
+etc.
+
+ftpd - run out of internet super server
+
+cat ftpd
+
+
+we will create the config files here in this folder /etc/xinetd.d
+
+this config file will know which port to use through /etc/services
+
+umartariq@umartariq:/etc$ cat xinetd.conf
+# Simple configuration file for xinetd
+#
+# Some defaults, and include /etc/xinetd.d/
+
+defaults
+{
+
+# Please note that you need a log_type line to be able to use log_on_success
+# and log_on_failure. The default is the following :
+# log_type = SYSLOG daemon info
+
+}
+
+includedir /etc/xinetd.d
+
+
+
+
+
+so xinetd.conf in etc is the main config file
+it includes all the other config files inside xinetd.d folder..
+
+
+we can create the ftp config file, set the settings and then set the server which will be used.
+
+provides echo service
+
+
+the services file is used to determine the service port
+
+and rest of the configuration is how to run that service
+
+super service is 1 service that runs multiple services
+
+1 program that manages all of the listening and communications
+and passes them to service program.
+
+

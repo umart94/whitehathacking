@@ -1,0 +1,15 @@
+groups have permissions that cascade down to the users
+
+sudo nano /etc/group
+
+
+our user is added to some other groups
+
+that means that all the rights and permissions these groups have , we also have.
+
+sudo groupadd testgroup
+
+sudo groupmod -g 5000 testgroup
+
+system uses groupid and sets permissions with that numeric value.
+

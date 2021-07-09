@@ -1,0 +1,47 @@
+Burp Suite Professional
+
+Burp Suite is an intercepting proxy
+proxy based web app test tool
+
+
+it requires a browser to go through it in order to test the vulnerable app.
+
+Vicnum project. - vulnerable app
+
+Spider - see all the web links of the pages of the website.
+
+inorder to do web app testing - do the spider
+
+then do a scan
+
+
+presentation layer in a browser - as a process component
+data sent to web server - go through business layer services interface.
+
+Application Server responsible for business logic. - app logic
+transforming data
+
+presentation layer communicates with the web server - web server communicates with application server communicates with data access layer communicates with the actual database ( data store)
+
+physical storage
+indexing
+
+3 to 4 tiers
+
+
+4 tier model.
+
+they maybe services residing on a same server or multiple servers.
+
+Tools:
+1. Browser
+2. BurpSuite. - fuzzing attacks.
+3. OWASP ZED Attack Proxy - fuzzing attacks
+
+
+Commercial Products
+
+
+Nicto - opensource.
+command line
+less proxy based

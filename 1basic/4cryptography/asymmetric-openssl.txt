@@ -1,0 +1,21 @@
+in linux terminal
+type 
+
+Step1 : generate a private key
+openssl genrsa -des3 -out private.key 4096
+
+we will have to type a passphrase for this private key
+
+
+Step2 : generate a public key, from the private key.
+
+openssl rsa -in private.key -pubout -out public.key
+
+Step3: now we are going to do the encryption
+
+openssl rsautl -encrypt -pubin -inkey public.key -in a.txt -out encrypted.txt
+
+Step4: decrypt encrypted text
+
+openssl rsautl -decrypt -inkey private.key -in encrypted.txt -out plaintext.txt
+

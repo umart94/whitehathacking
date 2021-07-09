@@ -1,0 +1,7 @@
+
+
+There is no menu.lst any more with grub2. You already found the generated configuration file /boot/grub/grub.cfg, but this one should not be edited. To change menu entries edit the files in /etc/grub.d/. The files there are read in alphabetical order by update-grub to create grub.cfg. Custom entries should go to 40_custom. See the README file in the directory.
+
+For your problem I suggest trying different boot options to disable certain or all acpi/apic features. You can add them to the GRUB_CMDLINE_LINUX="..." line in /etc/default/grub.
+You can find common kernel options here: Boot Options/Common Kernel Options
+Don't forget to run sudo update-grub afterwards.

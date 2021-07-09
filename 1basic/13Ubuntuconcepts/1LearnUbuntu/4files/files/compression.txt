@@ -1,0 +1,20 @@
+zip 1.zip *.txt
+or
+zip myfile.zip myfile* ( will make a zip of all files that start with myfile name)
+
+
+  adding: 1.txt (deflated 9%)
+  adding: 2.txt (deflated 14%)
+  adding: textfile.txt (stored 0%)
+  
+  
+ tar cfzv mytar.tar.gz *.txt
+1.txt
+2.txt
+textfile.txt
+
+
+create file zip verbose.
+xtract file zip verbose
+
+tar xfzv mytar.tar.gz

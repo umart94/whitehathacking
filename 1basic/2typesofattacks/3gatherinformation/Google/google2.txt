@@ -1,0 +1,21 @@
+intitle:error
+
+intitle:error intext:mysql
+
+intitle:error intext:mysql -forum -manual
+
+intext:apache/2
+
+
+"index of" +"bash_history" - shows a list of commands that somebody has been running
+
+
+"powered by" "shoutstats" hourly daily
+
+"powered by" "shoutstats" hourly daily -google
+
+-google will avoid places where it refers to google hacking
+
+"microsoft iis/5.0" server at" -google
+
+https://www.exploit-db.com/google-hacking-database

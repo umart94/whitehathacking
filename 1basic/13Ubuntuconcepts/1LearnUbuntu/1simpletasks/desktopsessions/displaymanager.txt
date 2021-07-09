@@ -1,0 +1,10 @@
+default
+
+kde
+
+xdm
+
+gdm - gnome
+
+light dm
+

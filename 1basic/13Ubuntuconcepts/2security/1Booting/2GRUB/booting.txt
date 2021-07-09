@@ -1,0 +1,14 @@
+GRUB has a number of stages : 
+
+1. goes into MBR or guid partition table
+loading additional stages.
+
+2.grub loads linux kernel eventually
+
+info grub
+
+cd /boot/grub
+
+normally we are looking for a file called menu.lst.
+
+in this case : 

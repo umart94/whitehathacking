@@ -1,0 +1,17 @@
+edit samb.conf
+
+set workgroup
+set server string
+set up wins service
+
+sample configurations , how to set up sharing
+
+homes
+share just home directory for each user accessed as :
+\\server\username
+
+
+smbclient allows access to shared directories on other systems
+connect to other system on network that is using smb protocol and windows sharing.
+
+

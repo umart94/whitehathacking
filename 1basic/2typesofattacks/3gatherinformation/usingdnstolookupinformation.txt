@@ -1,0 +1,92 @@
+we can use geektools online whois tool - if we know ip.
+
+we can also use dns to extract information
+
+nslookup
+
+type nslookup domainname.com
+
+by default this is just the A Record ( displays the ip address of the domain name )
+
+
+or
+
+just type nslookup
+
+then when we see >
+
+type
+
+>domainname.com
+
+>settype=mx
+
+>domainname.com ( shows the mx record )
+
+A mail exchanger record specifies the mail server responsible for accepting email messages on behalf of a domain name. It is a resource record in the Domain Name System. It is possible to configure several MX records, typically pointing to an array of mail servers for load balancing and redundancy
+
+
+>set type=soa
+
+>domainname.com
+
+An SOA record is a Start of Authority. Every domain must have a Start of Authority record at the cutover point where the domain is delegated from its parent domain. For example, if the domain mycompany.com is delegated to DNSimple name servers, we must include an SOA record for the name mycompany.com in our authoritative DNS records. We add this record automatically for every domain added to DNSimple. We show this record to you as a System Record on your domain’s Manage page.
+
+Here’s a content example from an SOA record:
+
+ns1.dnsimple.com admin.dnsimple.com 2013022001 86400 7200 604800 300
+The SOA record includes the following details:
+
+The primary name server for the domain, which is ns1.dnsimple.com or the first name server in the vanity name server list.
+The responsible party for the domain: admin.dnsimple.com.
+A timestamp that changes whenever you update your domain.
+The number of seconds before the zone should be refreshed.
+The number of seconds before a failed refresh should be retried.
+The upper limit in seconds before a zone is considered no longer authoritative.
+The negative result TTL (for example, how long a resolver should consider a negative result for a subdomain to be valid before retrying).
+You can’t configure these values yourself.
+
+
+
+
+
+
+
+
+in linux we have whois, 
+
+we also have host command
+
+host command can also do reverse lookups
+
+
+host domain.com
+
+host 1.2.3.4
+
+
+dig domain.com
+
+dig @4.2.2.1 domain.com
+
+query the server 4.2.2.1 for the domain.com
+
+
+dig mx domain.com ( mx record)
+
+
+dig ptr 1.2.3.4
+
+
+
+list servers from the domain:
+
+list the entire dns table.
+
+dig axfr 
+
+
+
+
+
+

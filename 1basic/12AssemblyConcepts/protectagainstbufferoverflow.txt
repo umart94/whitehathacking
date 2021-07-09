@@ -1,0 +1,14 @@
+OS Kernel protection
+
+protection of the low memory of the area where we execute
+
+make stack non executable.
+
+randomize memory locations ( instead of in order, we randomize starting point of the program, so it runs in different address space )
+
+stack randomization
+
+Stack canary
+
+
+

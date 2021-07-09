@@ -1,0 +1,18 @@
+ls > ls.txt
+
+send stdout to ls.txt
+we will not get anything on console
+
+it will be sent to the file.
+
+append
+
+ls >> ls.txt
+
+
+
+the std error should go to this file
+
+find / -name passwd -print 2> errors.txt
+
+

@@ -1,0 +1,37 @@
+testing to see whether we can break into a server or application
+involves social engineering
+technical approach
+physical access.
+
+
+goals
+assess weakness in a security posture
+understand risk position better
+accessing systems to find weaknesses
+
+results
+report detailing findings
+should include remediation activities to fix vulnerabilities.
+
+Scope
+
+How big is the bread box ?
+Any exclusions? any areas of no-touch ?
+Must get sign off from target organization
+always get approval from the RIGHT people.
+
+Security Assessment 
+
+hand in hand approach
+goal isnt to penetrate but to fully assess risk
+provide more detail about fixes
+may look at process issues in addition to technical issues
+review policies where appropriate.
+
+Comprehensive
+
+security assessment may look at more factors to assess the security posture and overall risk
+
+penetration testing may provide unrealistic view - if no penetration in a week
+organization may feel like they are secure.
+

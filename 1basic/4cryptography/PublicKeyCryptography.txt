@@ -1,0 +1,223 @@
+it uses key pairs
+there is a secret private key and there is a public key
+
+linked mathematically
+
+1 key for encryption
+1 key for decryption
+
+# openssl genrsa -des3 1024 > server.key
+Generating RSA private key, 1024 bit long modulus
+.................++++++
+................++++++
+e is 65537 (0x10001)
+Enter pass phrase:
+Verifying - Enter pass phrase for server.key:
+You will have to enter a pass phrase, or password. Do not lose this password! Doing so will make your certificates useless! The password is case-sensitive and should be a combination of both letters and numbers. It is a good idea to backup these files on another form of media.
+
+
+openssl genrsa -des3 1024 > server.key
+
+server.key generated
+
+now type
+
+openssl rsa -noout -text -in server.key
+
+RSA Private-Key: (1024 bit, 2 primes)
+modulus:
+
+publicExponent
+privateExponent
+prime1
+prime2
+exponent1
+exponent2
+coefficient
+
+
+the next step : generate a certificate request for CA
+
+10.6 Generating a Certificate Request
+Now that a private key for the server has been saved, the next step is to generate a certificate request that one may send to any Certificate Authority, or CA. If there is no need for a CA to sign the certificate, please read the next section on Generating a Self-Signed certificate.
+
+One will be asked a series of questions which contribute to the X.509 attributes of the certificate.
+
+# openssl req -new -key server.key -x509 -days 365 -out server.csr
+
+Enter pass phrase for server.key:
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+--Country Name (2 letter code) [AU]:US
+State or Province Name (full name) [Some-State]:Illinois
+Locality Name (eg, city) []:Chicago
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Some Company
+Organizational Unit Name (eg, section) []:IT Department
+Common Name (eg, YOUR name) []:www.servername.com
+Email Address []:admin@servername.com
+---
+It is absolutely essential that one specifies the domain name that the certificate is being created for under Common Name (eg. YOUR name) (for example, www.servername.com).
+
+The challenge password need not be entered - this is entirely optional.
+
+Once completed, the file which has been created, server.csr should be sent to any Certificate Authority. Their websites will provide the details on how to do so.
+
+The CA will then send you a file back, which should be saved as server.crt. It takes an average of a week or two for the CA to complete their process. In the meantime, one can generate a self-signed certificate for testing. Do not lose the file that the CA returns! Keep all keys on safe media.
+
+
+
+
+
+
+10.7 Generating a Self-Signed Certificate
+If one does not want a CA to sign their certificate, or for testing purposes, a self-signed certificate can be generated. The disadvantage to this is that the end user, when visiting the SSL enabled site, will be warned by their browser that the certificate could not be verified. However, the end user will still be able to continue onto the secure site after bypassing the error. For personal sites, or internal sites, this method is the cheapest and works.
+
+The following will generate a certificate valid for 1 year and place the resulting certificate in the file, server.crt.
+
+# openssl req -new -key server.key -x509 -days 365 -out server.crt
+As in the above section, one will have to enter in details about the security certificate. Again, it is absolutely essential that one specifies the domain name that the certificate is being created for under Common Name (eg. YOUR name) (for example, www.servername.com). Again, keep these keys in a safe location, in addition to the server itself.
+
+
+
+10.8 Another Similar Method
+Here are basically the steps covered. If you have followed the above sections, this section can be skipped, though detailed is another (similar) method:
+
+# openssl genrsa -des3 -out server.key 1024
+Generating RSA private key, 1024 bit long modulus
+.........++++++
+...................++++++
+e is 65537 (0x10001)
+Enter pass phrase for server.key:
+Verifying - Enter pass phrase for server.key:
+
+# openssl req -new -key server.key -out server.csr
+Enter pass phrase for server.key:
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:US
+State or Province Name (full name) [Some-State]:Illinois
+Locality Name (eg, city) []:Chicago
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:SomeCompany
+Organizational Unit Name (eg, section) []:IT Dept.
+Common Name (eg, YOUR name) []:www.servername.com
+Email Address []:admin@servername.com
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+One should send the resulting server.csr file to the CA, and they will send back a server.crt file.
+
+To self sign the certificate:
+
+# openssl x509 -req -days 360 -in server.csr -signkey server.key -out server.crt
+Signature ok
+subject=/C=US/ST=Illinois/L=Chicago/O=SomeCompany/OU=IT Dept./CN=www.servername.com/emailAddress=admin@servername.com
+Getting Private key
+Enter pass phrase for server.key:
+As with the above section, the files server.csr and server.key will be needed for Apache.
+
+
+
+
+
+
+
+10.9 Installing the SSL Certificate
+Whichever method one choses to generate the certificates, there should be two files server.key and server.crt (which is either the certificate sent from the CA, or the self-signed certificate).
+
+One may place the server.key and server.crt files into any directory, however, the directories usually are /usr/local/apache/conf/ssl.key and /usr/local/apache/conf/ssl.crt respectively.
+
+To install the SSL Certificates into Apache, one simply needs to notify Apache to where the certificate key files can be found on the server.
+
+Within /path/to/installed/apache/conf/httpd.conf (usually /usr/local/apache/conf/httpd.conf), simply search for these directives, uncomment them and edit the file locations (if need be):
+
+SSLCertificateKeyFile /usr/local/apache/conf/ssl.key/server.key 
+SSLCertificateFile /usr/local/apache/conf/ssl.crt/server.crt
+
+
+
+
+11 Confirming the Apache Install
+A test should be carried out to make sure Apache has been correctly installed. Fire up your favourite text editor and open up the file, /path/to/installed/apache/conf/httpd.conf. For example, /usr/local/apache/conf/httpd.conf.
+
+Search for the following:
+
+#Listen 3000
+#Listen 12.34.56.78:80
+The Listen directive notifies the Apache server of the IP address address and port number that it should listen on for request. For SSL requests, this is usually port 443. However, if mod_ssl was installed, something similar will be within the httpd.conf file:
+
+<IfDefine SSL>
+Listen 80
+Listen 443
+</IfDefine>
+One should leave those lines commented out, but also add Listen 127.0.0.1:80 directly underneath. Also, one should change the ServerName directive to ServerName 127.0.0.1.
+
+127.0.0.1 can be changed to an IP address to any IP address from the network the server is on. However, it is always easiest to use 127.0.0.1 to test the Apache server install, as one can confirm Apache is running on the server itself, instead of running into any network configuration problems, if any.
+
+11.1 Starting the Apache Server
+Once httpd.conf has been saved, Apache can be started via:
+
+# /usr/local/apache/bin/apachectl start
+or if Apache is configured for use with SSL (the password for the certificate will be asked if one configured it so):
+
+# /usr/local/apache/bin/apachectl startssl
+If no problems are reported, Apache will inform you that the service has started. In any browser on the same computer, visit the url http://127.0.0.1, or https://127.0.0.1, and a message should appear that Apache has been installed successfully.
+
+Once started one may check the Error Log which will indicate what has been compiled into Apache. For example:
+
+# tail -f /path/to/installed/apache/logs/error_log
+
+Apache/1.3.29 (Unix) mod_ssl/2.8.11 OpenSSL/0.9.7d mod_perl/1.29 PHP/4.3.5 configured
+-- resuming normal operations
+Another method is to also check the installed modules with Apache. This can be done by executing /path/to/installed/apache/bin/httpd -l. One will see, amongst other modules, mod_so listed, and if SSL is enabled, mod_ssl.
+
+At this point, the base Apache server has been installed. The next few sections discuss Apache add-on modules, and how to configure and install them.
+
+
+
+
+openssl x509 -noout -text -in server.crt ( this is the public key , in standard procedure the CA must send this to us, and it should be digitally signed by the Certificate Authority.
+)
+
+
+This certificate can also be used to digitally VERIFY a message SENT by US to someoneelse..
+
+
+
+in order to do this.
+
+first, we would need to sign the message using our private key.
+then, the receiver would know our public key, and would use this to verify the message.
+
+
+PGP -decentralized approach
+
+x.509 use certificate authority.
+
+people and users are validated and verified.
+
+pgp does not use central authority.
+it relies on users to identify themselves.
+
+called web of trust model.
+
+post public key to a repository
+
+anybody who wants to send message to us will sign our public key with their key.
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+when we put data in a buffer that is larger in size than the buffer was allocated.
+
+put the data where the return pointer is., get control over execution of the program
+
+
+segmentation fault - jumped to a part of memory that we have no rights to.

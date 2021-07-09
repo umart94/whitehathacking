@@ -1,0 +1,15 @@
+domain.com/clients/tom/projects/menu
+
+
+or
+
+tom.domain.com (subdomain)
+this is shortcut to that entire directory path on the server.
+
+subdomain behaves as a real domain
+
+what will happen is that when we type in tom.domain.com
+
+it will redirect to 
+
+domain.com/clients/tom/projects/menu

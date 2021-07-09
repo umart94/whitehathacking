@@ -1,0 +1,82 @@
+etc/apache2
+
+go to apache2.conf
+
+this is global config file, that includes and uses some other smaller config files with it.
+
+ServerRoot - tells where the server is actually located
+
+# Include list of ports to listen on
+Include ports.conf
+
+listening on a number of ports
+each port may point to different virtual server
+and offer a seperate service.
+
+
+
+directories for applications
+
+then 
+
+
+log format - extended is used.
+custom log
+we can specify what we want log entries to look like..
+this sections is for
+how we generate log files
+
+
+ports.conf tells us which apache module is listening on which port.
+
+
+
+1. Sites available
+this is primary server config file 000-default.conf
+
+<VirtualHost *:80>
+
+every ip address on this system that is listening on port 80 will use this configuration
+
+ServerAdmin
+DocumentRoot - this is where all of our html pages of web languages
+are located. under document root
+
+error log
+custom log
+ etc.
+
+default-ssl.conf file
+
+
+if we enable ssl module, then this conf is used
+
+this will set path for the ssl parameters and the certificate paths.
+
+there maybe a number of sites available that may not actually be turned on
+
+
+in order to make use of config
+
+we need to go to sites enabled
+
+
+it also has 000-default.conf file
+this is used for active web applications to be installed in apache
+
+mods enabled
+mods available
+
+links to modules
+
+ls /var/www/html document root
+
+
+
+
+
+
+
+Sites enabled
+
+

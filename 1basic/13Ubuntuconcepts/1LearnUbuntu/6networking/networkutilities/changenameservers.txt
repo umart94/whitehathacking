@@ -1,0 +1,23 @@
+localdns server
+
+local traffic , local lookups
+
+we can use public resolvers
+
+cat /etc/resolv.conf
+
+dynamic resolv.conf file for glibc resolver. 
+
+nameserver
+search localdomain
+
+set to automatic dhcp 
+
+set it to addresses only automatic dhcp
+
+then in dns servers add our own dns server.
+
+this will get inserted into resolv.conf
+
+so we can use public dns servers.
+

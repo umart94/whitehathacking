@@ -1,0 +1,5 @@
+create a new database
+
+create a user for database
+
+link the user to database

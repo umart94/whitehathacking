@@ -1,0 +1,16 @@
+http is stateless
+nothing is saved into a server.
+
+web applications have to manage state
+session id
+keep track of that session id
+
+if we capture that session id
+we can masquerade as that user.
+
+stored in cookie
+generated on client side
+server requests for cookie storage on your system
+so server will use it to store information about e.g personalized experience
+
+https://google-gruyere.appspot.com/

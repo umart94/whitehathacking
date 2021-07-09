@@ -1,0 +1,9 @@
+in custom ftp, the root directory was / ( root)
+
+so we just specify the name of the client directory
+
+
+by default we have ftp accounts but we can create another account for the clients.
+
+the default account has the password same as control panel, and this can also be edited from ftp panel.
+

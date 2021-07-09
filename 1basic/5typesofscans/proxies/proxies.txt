@@ -1,0 +1,27 @@
+proxy server :
+
+a web browser would send request for web pages to a proxy server
+
+proxy server will make request to actual server - and send messages back..
+
+just to conserve internet bandwidth
+
+proxy server will cache requests , and proxy server would send cached responses rather than going back to the internet.
+
+content will be sent back from the cache.
+
+bandwidth is saved.
+
+
+
+
+proxy server used in blocking of websites.
+proxy server can protect against users going to malicious websites.
+
+used to insert an antivirus solution in the middle of the network web stream - proxy server checks for malicious data.
+
+
+owasp zap tool
+bluecoat proxies
+linux opensource squid proxy.
+

@@ -1,0 +1,33 @@
+gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+
+gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+
+gpgv --keyring .\tor.keyring Downloads\torbrowser-install-win64-9.0_en-US.exe.asc Downloads\torbrowser-install-win64-9.0_en-US.exe
+
+
+
+gpgv --keyring .\tor.keyring C:\Users\Intel\Downloads\torbrowser-install-win64-9.5.4_en-US.exe.asc C:\Users\Intel\Downloads\torbrowser-install-win64-9.5.4_en-US.exe
+
+
+gpgv: Signature made 08/23/20 21:37:47 Pakistan Standard Time
+gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torproject.org>"
+
+
+If you want to take your privacy to the next level, you can connect to a VPN before starting the Tor browser. The VPN will not be able to see what you’re doing in the Tor browser, and you’ll get the added benefit that no Tor node will be able to see your IP address. It will also prevent your network operators from even knowing that you are using Tor, which is helpful if the Tor Network happens to be blocked where you are. 
+
+
+information gathering about a target
+and we dont want to know the target to know about our attacks
+
+tor uses virtual tunnels to connect
+
+privacy and security
+
+tor protects against traffic analysis
+activites cannot be tracked
+they cannot be traced back to you ( multiple nodes )
+
+
+cotse.net
+anonymizer
+

@@ -1,0 +1,4 @@
+servers are constantly running
+servers serve the information asked for by the client
+servers can serve different types of files
+each file is processed by different applications and protocols e.g http

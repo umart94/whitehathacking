@@ -1,0 +1,21 @@
+arp -a
+
+route command shows routing table
+
+default route - send everything here that is not a route
+default gateway - send everything here which is not local. not destined for local network..
+
+
+
+netstat
+all of the systems that my system is talking to
+
+
+
+
+netstat -rn
+
+
+netstat -an | less
+
+netstat -a ( resolutions of host names

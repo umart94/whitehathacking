@@ -1,0 +1,6 @@
+botnet is network of bots
+used in spam , DDoS , spread viruses
+grum botnet
+zeus botnet
+zeus creates a botnet - sells for ~ 700$
+

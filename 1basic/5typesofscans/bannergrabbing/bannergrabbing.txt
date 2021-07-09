@@ -1,0 +1,65 @@
+banner is any message that application provides
+networked applications provide :
+message - indicating type of service running on a port on that server.
+
+telnet 192.168.100.136 22
+
+if i type this
+it gives us a message displaying the ssh version used by the OS
+
+
+connect on port 80 web server responds on well known ports
+
+
+telnet client - server
+
+server used to provide console access to remote users
+client used to connect to systems running telnet as a server
+good app for doing a tcp connection
+
+telnet 192.168.100.136 22
+
+connect to ports
+interact with them manually using get request.
+
+nc -v www.domain.com 80
+
+dig mx domain.com
+
+
+
+sudo netcat -v -z -n -w 1 1.2.3.4 1-1023
+
+
+sudo nc -v mail.google.com 25
+DNS fwd/rev mismatch: googlemail.l.google.com != someaddress
+
+They do match, google (and most large providers) have an abstraction for load balancing, the destination/ip of gmail-smtp-in.l.google.com. changes depending on your requesting ip, the health of the network, the load, etc.
+
+however the IP address has a forwarder && reverse dns (FCrDNS)
+
+dig gmail-smtp-in.l.google.com. +short
+74.125.29.26
+
+26.29.125.74.in-addr.arpa. 15995 IN     PTR     qg-in-f26.1e100.net.
+
+dig qg-in-f26.1e100.net. +short
+74.125.29.26
+However, none of this "matters" for Inbound MX Records, only sending IPs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+encrypted traffic
+
+openssl s_client -connect www.orielly.com:443
+

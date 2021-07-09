@@ -1,0 +1,29 @@
+depends on the needs of our target
+
+malicious attacker will have specific goals , access information , persistent access and control.
+
+Access:
+Could you break in ? Do you have Command line to a computer ?? ,can you obtain shell access to a computer ?? , can you obtain desktop access to a computer ??
+How easy it was ?? can you repeat the task ? and how ??
+
+
+Information
+
+Usernames
+passwords
+information about other systems
+credentials for other systems
+credit card numbers ?
+
+config files that show how to access the system having credentials.
+
+Persistent access
+can we log back in ?
+may involve back doors, depending on the channel used.
+
+Control
+
+Participation in botnet
+use as a leaping off point to other systems
+access to internal systems as needed
+could be used as a tunnel point to other systems.

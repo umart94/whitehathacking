@@ -1,0 +1,6 @@
+To completely remove xubuntu-desktop, type the following three commands in the terminal.
+
+sudo apt remove xubuntu-desktop
+sudo apt autoremove xubuntu-desktop
+sudo apt purge xubuntu-desktop
+This will get rid of xubuntu-desktop, all xubuntu configuration files, and all xfce apps.

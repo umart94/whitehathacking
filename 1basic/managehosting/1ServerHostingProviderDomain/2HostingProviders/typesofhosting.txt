@@ -1,0 +1,80 @@
+hosting provider is a company that specializes in running web servers
+they provide hardware with fast connections and administration of websites.
+
+Types of Hosting
+
+1. Shared
+2. Virtual
+3. Cloud
+4. Dedicated
+
+
+1. Shared
+server runs site in the same place as many other sites and services, which use a fixed amount of resources. cpu ,ram, hard drives etc. with other users
+few dollars a month
+
+problems with 1 host can affect others.
+power and customization is limited.
+we cant install our own software.
+
+
+
+
+2. Virtual hosting
+
+our server runs in a virtual environment
+single computer behaves as a several computers
+each computer behaves as a seperate entity and has a guaranteed amount of cpu , ram and har drive space that will only be used by that computer.
+
+we can get root access to install our own software but we will still be sharing memory hard drives and other resources.
+if one virtual box crashes, it does not have any affect on other virtual boxes.
+
+much better option than shared.
+
+
+3. Cloud
+cloud hosting means that the server does not run on an actual machine, but on a cloud or network of computers.
+if any one computer fails, the other computers take over processing needs.
+ 
+more efficient than shared or virtual.
+
+the memory and hard drive space adjust to your needs.
+we pay for what we use. and cpu and hard disk is only used that is required. ( not entirely dedicated )
+
+
+ 
+
+
+
+4. Dedicated
+
+a machine or a group of computers that run our web services.
+no one else shares the resources.
+full root access
+we can install software or additional hardware as required.
+
+we can also group servers together and create our own cloud
+
+most expensive and flexible.
+
+
+
+
+Full-featured hosting services
+Full-featured hosting services include:
+
+Complex managed hosting : applies to both physical dedicated servers and virtual servers, with many companies choosing a hybrid (a combination of physical and virtual) hosting solution. There are many similarities between standard and complex managed hosting but the key difference is the level of administrative and engineering support that the customer pays for – owing to both the increased size and complexity of the infrastructure deployment. The provider steps in to take over most of the management, including security, memory, storage and IT support. The service is primarily proactive in nature. [1]
+
+
+Dedicated hosting service: also called managed hosting service, where the hosting service provider owns and manages the machine, leasing full control to the client. Management of the server can include monitoring to ensure the server continues to work effectively, backup services, installation of security patches and various levels of technical support.
+
+
+Virtual private server: in which virtualization technology is employed in order to allow multiple logical servers to run on a single physical server
+Colocation facilities provide just the Internet connection, uninterruptible power, and climate control, but let the client do his own system administration; the most expensive
+
+Cloud hosting: which can also be termed time-share or on-demand hosting, in which the user only pays for the system time and space used, and capacity can be quickly scaled up or down as computing requirements change. The hosting provider normally charges for the power and also space used in the datacentre.
+
+
+
+
+

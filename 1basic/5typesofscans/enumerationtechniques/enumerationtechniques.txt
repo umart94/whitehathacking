@@ -1,0 +1,66 @@
+techniques to get information from systems
+versions , applications running on those systems
+
+vulnerabilities, systems at risk or not
+
+banner grabbing : 
+
+telnet domain.com 80
+
+
+DNS :
+
+figure out who the nameserver for a domain is:
+
+dig @NS1.DNSMADEEASY.COM domain.com axfr
+
+we want to get a list of hosts that maybe available in a domain
+
+zone transfer.
+
+
+dig @NS1.DNSMADEEASY.COM version.bind txt chaos
+
+
+; QUESTION SECTION:
+;version.bind.                  CH      TXT
+
+;; ANSWER SECTION:
+version.bind.           0       CH      TXT     "DNS Made Easy Anycast"
+
+;; AUTHORITY SECTION:
+version.bind.           0       CH      NS      version.bind.
+
+
+
+
+
+enumerate users that are on a particular system
+LDAP queries against active directory servers
+built in windows commands to do this type of enumeration
+
+net view
+
+no domain controller or server controller available for the workgroup.
+
+System error 6118 has occurred.
+
+The list of servers for this workgroup is not currently available
+
+net view \\MYIP
+There are no entries in the list.
+
+net is a way to make use of SMB protocol in windows and connect to other systems on the network.
+
+net use can set up share.
+
+Windows Server Resource Kit.
+
+
+
+
+
+
+
+
+

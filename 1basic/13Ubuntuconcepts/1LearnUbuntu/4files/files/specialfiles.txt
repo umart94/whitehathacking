@@ -1,0 +1,33 @@
+/dev/null - is a data sink
+
+find / -name passwd -print 2> /dev/null
+
+anything that we send to it is going to disappear.
+
+we dont want to see the errors and only see clear output.. so that will all not be seen.
+
+ls > /dev/nulll - it consumes everything we are seeing
+
+
+ls > /dev/zero
+
+diskdump 
+dd if=/dev/zero of=zero.txt count=250
+
+cat zero.txt
+
+xxd zero.txt | less - it is the null character.
+
+
+ls -la zero.txt
+
+
+
+
+------------
+
+random
+
+cat /dev/urandom
+random number generator. - has to get converted to a number value.
+

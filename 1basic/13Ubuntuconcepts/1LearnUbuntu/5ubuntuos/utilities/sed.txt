@@ -1,0 +1,19 @@
+stream editor
+
+echo this is true
+
+send output of echo into input to send
+
+/ is indicator that im starting string
+/true/false/
+replace true with false
+
+echo this is true | sed 's/true/false/'
+
+
+grep file * | sed 's/file/non-file'
+
+
+cat myfile | sed 's/file/foo' > myfoo
+
+cat myfoo

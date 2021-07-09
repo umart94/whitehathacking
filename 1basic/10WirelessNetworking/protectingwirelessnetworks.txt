@@ -1,0 +1,8 @@
+changeSSID
+turn wep off
+access policies
+turn wpa2 on
+
+mac address has to be on the access point table - otherwise wifi will not connect.
+
+

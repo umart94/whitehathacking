@@ -1,0 +1,38 @@
+/etc/systemd
+
+has the configuration files.
+
+rather than runlevels , we have targets
+
+graphical target
+multiuser target
+
+they are all equivalent to some runlevel.
+
+for e.g graphical target equivalent to runlevel 5.
+
+multi user target eq. to run level 3.
+
+sudo systemctl get-default
+
+sudo systemctl isolate graphical.target.
+
+
+
+set default to be multi user target
+
+sudo systemctl set-default multi-user.target
+
+
+THIS WILL SET DEFAULT ! so rather than doing this
+
+what we can do is to test it
+
+sudo systemctl isolate multi-user.target
+
+
+
+to switch back
+
+sudo systemctl isolate graphical.target
+

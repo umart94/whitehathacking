@@ -1,0 +1,36 @@
+linux firewall
+recent version of linux firewall
+
+before it was called ipchains
+
+
+sudo iptables -L -v
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination  
+ 
+ 
+ groups things into chains and tables
+ default policy is accept or default policy drop
+ 
+ accept anything that comes in
+ 
+ we could append a rule
+ 
+ sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+ 
+  sudo iptables -A INPUT -p tcp --dport 22 -j DROP
+  
+  we can do network address translation
+  forwarding
+  drop and accept rules
+  flush everything out of iptables and start from scratch
+  
+  sudo iptables -F INPUT
+  sudo iptables -L -v
+  

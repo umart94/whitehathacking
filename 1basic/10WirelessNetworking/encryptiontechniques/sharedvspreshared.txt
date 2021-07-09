@@ -1,0 +1,11 @@
+The difference is exactly the same as the language suggest. "Shared key" means that the same key is used by several party. It doesn't tell you how the key was distributed among them.
+
+"pre-shared key" means the key has been shared before the current operational context.
+
+To go you two examples:
+
+When you perform a Diffie-Hellman key exchange in an SSL connection, you actually generate a new key that is shared by both client and server without any of them having a previous knowledge of that key. That key is shared but not pre-shared.
+
+If you protect a ZIP file with a password, this password becomes the shared key and it must be shared between all parties. That key is both shared (everyone uses the same) and pre-shared (its distribution isn't covered by the ZIP protocol and must be performed through a different secure channel before usage)
+
+These are only two examples, there are many more.

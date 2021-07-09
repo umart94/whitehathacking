@@ -1,0 +1,4 @@
+add a cd rom drive
+mount the linux.iso file that comes with vmware tools
+install it using sudo privileges.
+

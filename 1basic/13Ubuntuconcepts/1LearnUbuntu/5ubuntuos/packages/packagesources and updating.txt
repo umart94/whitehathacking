@@ -1,0 +1,22 @@
+cd /etc/apt
+
+etc is where we store config files
+
+
+sources.list is a list for anywhere that we can get software.
+
+
+cdrom can be used as a source
+
+deb is refering that it is a debian package
+
+debian is debian distribution of ubuntu.
+
+this file has updates ,bug fix updates related to release versions of ubuntu.
+
+Ubuntu uses the APT (Advanced Package Tool) package manager to manage packages. The APT package manager and all the graphical front ends (Ubuntu Software Center, Muon, aptitude etc) uses the sources.list file to learn about which package repository or repositories to use.
+
+
+sudo apt-get update is going to update the list of packages that we have available.
+
+

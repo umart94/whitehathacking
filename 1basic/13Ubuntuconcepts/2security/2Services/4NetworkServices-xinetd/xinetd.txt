@@ -1,0 +1,55 @@
+make use of internet super server
+
+its actually a process called inetd
+
+xinetd - the extended Internet services daemon
+
+ xinetd  performs  the  same  function  as  inetd: it starts programs that provide Internet
+       services.  Instead of having such servers started at system initialization  time,  and  be
+       dormant  until a connection request arrives, xinetd is the only daemon process started and
+       it listens on all service ports for the services listed in its configuration file. When  a
+       request  comes  in, xinetd starts the appropriate server.  Because of the way it operates,
+       xinetd (as well as inetd) is also referred to as a super-server.
+
+       The services listed in xinetd's configuration file  can  be  separated  into  two  groups.
+       Services  in  the  first group are called multi-threaded and they require the forking of a
+       new server process for each new connection request.  The  new  server  then  handles  that
+       connection.   For  such  services,  xinetd keeps listening for new requests so that it can
+       spawn new servers.  On the other hand, the second group includes services  for  which  the
+       service daemon is responsible for handling all new connection requests.  Such services are
+       called single-threaded and xinetd will stop handling  new  requests  for  them  until  the
+       server dies.  Services in this group are usually datagram-based.
+
+       So  far,  the  only  reason  for  the  existence  of a super-server was to conserve system
+       resources by avoiding to fork a lot of processes which might be dormant for most of  their
+       lifetime.   While fulfilling this function, xinetd takes advantage of the idea of a super-
+       server to provide features such as access control and logging.  Furthermore, xinetd is not
+       limited  to  services listed in /etc/services.  Therefore, anybody can use xinetd to start
+       special-purpose servers.
+
+FILES
+
+       /etc/xinetd.conf    default configuration file
+       /var/run/xinetd.dump
+                           default dump file
+
+
+
+In computer networking, xinetd (Extended Internet Service Daemon) is an open-source super-server daemon,[3] runs on many Unix-like systems and manages Internet-based connectivity.
+
+It offers a more secure alternative to the older inetd ("the Internet daemon"), which most modern Linux distributions have deprecated.[4] 
+
+xinetd listens for incoming requests over a network and launches the appropriate service for that request.[5] Requests are made using port numbers as identifiers and xinetd usually launches another daemon to handle the request.[6] It can be used to start services with both privileged and non-privileged port numbers.
+
+xinetd features access control mechanisms such as TCP Wrapper ACLs, extensive logging capabilities, and the ability to make services available based on time. It can place limits on the number of servers that the system can start, and has deployable defense mechanisms to protect against port scanners, among other things.
+
+On some implementations of Mac OS X, this daemon starts and maintains various Internet-related services, including FTP and telnet. As an extended form of inetd, it offers enhanced security. It replaced inetd in Mac OS X v10.3, and subsequently launchd replaced it in Mac OS X v10.4. However, Apple has retained inetd for compatibility purposes. 
+
+
+
+
+
+
+
+
+sudo apt-get install xinetd

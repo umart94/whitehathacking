@@ -1,0 +1,17 @@
+hdparm - hused to get parameters for hard drive
+sudo hdparm /dev/sda
+
+
+
+No, hdparm is simply the wrong tool for your disks. They are SCSI (SAS) disks and you are trying to use a program that is entirely built around ATA commands. They literally do not speak the same language.
+
+For SCSI you have sg_* tools found in sg3-utils. For example, sg_inq to show disk identity, sg_start to spin up/down, sg_turs and sg_requests for status. The usual smartctl will work with SCSI disks, although somewhat differently.
+
+(The kernel performs some ATA/SCSI translation, but that's for the opposite direction: i.e. allowing programs to issue SCSI commands to ATA disks. That allows some of the sg3-utils to work on ATA, but not the other way around.)
+
+Seagate self-encrypting drives appear to use TCG OPAL, so sedutil-cli should work with them. (If you tried to set an "ATA password", that wouldn't have worked anyway.)
+
+
+In addition to the accepted answer, I would like to mention that you can use thesdparm utility with SCSI disks. Install with sudo apt install sdparm
+
+Get all parameters/settings with sudo sdparm -l -a /dev/sdX Here -a gets all output fields and -l gets the long output i.e. explanation of the output fields.

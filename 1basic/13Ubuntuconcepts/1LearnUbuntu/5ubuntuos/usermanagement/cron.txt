@@ -1,0 +1,29 @@
+sudo cat /etc/cron.d
+
+
+cat anacron
+
+cron tab entries for anacron package.
+
+
+cron tab is a set of parameters around how a cron job is going to work
+use default settings to add jobs ourselves.
+
+cd /etc/cron.daily
+
+
+cron.daily is where we run jobs that we want to run once daily.
+
+logrotate files
+
+rotate logs.
+
+cron runs logrotation.
+on daily basis
+
+cron is program that runs all of these individual scripts once a day.
+
+jobs are executed in ascii order alphabetically.
+
+
+

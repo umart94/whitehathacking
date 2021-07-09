@@ -1,0 +1,5 @@
+kill ProcessID
+
+killall firefox
+
+killall -9 firefox

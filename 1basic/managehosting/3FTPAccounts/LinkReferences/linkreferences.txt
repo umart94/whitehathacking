@@ -1,0 +1,81 @@
+when accessing documents on the server, we can use these type of links :
+
+absolute
+root relative
+relative references
+
+
+whenever we go to a domain, it goes to a document called default document.
+usually this document is called index.html
+
+if there is no index.html
+the server will display an error page or some default test page.
+
+
+
+1. Absolute Reference
+
+http://website.com/images/computer.jpg
+domain name of the website followed by image location
+
+used when linking to websites outside our website.
+
+
+disadvantages:
+
+will only work when we are online.
+also , if the domain name of website changed, then this link would break and wont work.
+
+
+
+
+2. Root Relative Reference
+Root Relative reference
+
+<img src="/images/computer.jpg" alt="a computer" />
+
+look for this file starting from the root directory.
+so root directory has an images directory that has the jpg file.
+
+
+used when there are a lot of folders with complex structures. so the links are consistent.
+
+
+
+
+
+
+3. Relative References
+in folder we have index.html and upcoming folder
+we have upcoming folder, inside which there is shows.html
+
+in index.html , we create a link
+
+<a href="upcoming/shows.html">
+
+this is called a relative link, as it is linking to the shows.html page in relation to the index.html page.
+
+
+
+another type of relative reference is that :
+
+in folder we have index.html and upcoming folder
+we have upcoming folder, inside which there is shows.html
+
+shows.html has this tag :
+
+<img src="../images/computer.jpg" alt="abcd" />
+
+images folder is one directory above the page that is referencing this  /images/computer.jpg
+i.e in the root folder
+
+so relation of images folder to upcoming folder is one directory up and then images. , typed with ../
+
+
+
+when website has a lot of folders, using relative links becomes difficult.
+
+
+
+
+

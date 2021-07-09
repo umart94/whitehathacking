@@ -1,0 +1,12 @@
+take whole block of telephone numbers , see if there is a modem there.
+
+lots of enterprises and service providers use modems for out-of-band network communication with their infrastructure.
+
+if there is a critical error that causes those networking systems to fail
+they have a way to communicate with them, even though it will be slow and we have to have a modem ourselves.
+
+modern systems do not have modems installed.
+
+however
+there is still use in doing war dialing..
+

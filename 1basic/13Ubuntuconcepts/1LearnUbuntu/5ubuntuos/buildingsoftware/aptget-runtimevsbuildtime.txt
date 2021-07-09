@@ -1,0 +1,31 @@
+The short version.
+
+apt-get install
+installs a new package, automatically resolving and downloading dependent packages. If package is installed then try to upgrade to latest version.
+
+apt-get build-dep
+Causes apt-get to install/remove packages in an attempt to satisfy the build dependencies for a source package.
+
+The command sudo apt-get build-dep packagename means to install all dependencies for 'packagename' so that I can build it". So build-dep is an apt-get command just like install, remove, update, etc.
+
+The build-dep command searches the local repositories in the system and install the build dependencies for package. If the package does not exists in the local repository it will return an error code.
+
+The difference is whether the dependencies are needed at runtime as opposed to at buildtime.
+
+For instance, maybe I'm building a binary which uses openssl. At build time I would need the openssl header files, which are in libssl-dev. I would then list this as a Build-Depends.
+
+However, the resulting binary and package don't need the header and other development files, so at install time I don't need libssl-dev. It wouldn't be in Depends, then. But libssl, the runtime library my binary linked against, would need to be in Depends.
+
+The man sections you quoted indicate this (it talks about "satisfy the build dependencies" of a package), but without prior knowledge of when Build-Depends are used, this can be confusing.
+
+Have a look at the Debian policy guide for definitions of control file fields:
+
+http://www.debian.org/doc/debian-policy/ch-controlfields.html
+
+here's the section on Build-Depends. Note it's under the "dependencies for source packages" header:
+
+http://www.debian.org/doc/debian-policy/ch-relationships.html#s-sourcebinarydeps
+
+And this one talks about Depends. Note its' under the Binary packages header:
+
+http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps

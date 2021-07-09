@@ -1,0 +1,2 @@
+D:\github\security\WhitehatHacking\1basic\2typesofattacks\BufferOverflowandFormatStringAttack\Debug\BufferOverflowandFormatStringAttack.exe
+D:\github\security\WhitehatHacking\1basic\2typesofattacks\BufferOverflowandFormatStringAttack\Debug\BufferOverflowandFormatStringAttack.pdb

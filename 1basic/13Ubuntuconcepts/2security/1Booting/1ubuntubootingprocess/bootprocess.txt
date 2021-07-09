@@ -1,0 +1,20 @@
+POST test - power on self test
+transfers control to firmware - looks for portion of hardrive
+
+portion of hard drive
+master boot record
+guid partition table
+
+MBR is older data structure associated with DOS system.
+includes but not limited to partition table where all disks are and 448 bytes of bootcode.
+
+
+in ubuntu
+we use grub - grand unified boot loader.
+we can use linux loader ( lilo )
+
+boot os from hard disk.
+by reading first section of hard drive.
+
+first 512 bytes - in mbr.
+in guid partition table, much larger partition identifiers.

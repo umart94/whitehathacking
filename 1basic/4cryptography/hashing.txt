@@ -1,0 +1,18 @@
+hashing is a one way function
+no ability to get back the original data.
+
+fixed length values generated.
+this should have no relation at all to the original data.
+
+we hash passwords
+
+cleartext passwords are not saved.
+
+hash password - same value back is returned
+
+generate hashes against a list of words until we match a password inside a file.
+so we know what a password is. ( of a file )
+
+
+but since it can be computed we also use salt.
+

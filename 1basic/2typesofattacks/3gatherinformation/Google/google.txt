@@ -1,0 +1,23 @@
+these are google queries
+
+
+"index of /"
+
+"index of /" +passwd
+
+filetype:config
+
+allintitle:sensitive
+
+allintitle:sensitive filetype:doc
+
+site:mil sensitivie
+
+inurl:"wwwroot/"
+
+intitle:
+
+ext:js
+
+
+intext:

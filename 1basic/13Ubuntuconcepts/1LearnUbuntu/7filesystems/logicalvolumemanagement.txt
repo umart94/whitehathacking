@@ -1,0 +1,20 @@
+apt-get install lvm2
+
+Initialize the `/dev/sda1` volume for use by LVM:
+pvcreate /dev/sda1
+Force the creation without any confirmation prompts:
+pvcreate --force /dev/sda1
+
+
+pvcreate to create physical volume
+logical volume using lvcreate
+then create a volume group
+
+
+sudo lvscan
+
+volume groups can be created using multiple hard drives
+make it use seperate partitions
+
+
+lvextend - extend partition

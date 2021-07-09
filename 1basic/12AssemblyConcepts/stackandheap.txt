@@ -1,0 +1,36 @@
+Stack Heap are 2 different ways of storing information in memory
+
+
+low memory 00000
+TEXT SEGMENT - PROGRAM RESIDES , EXECUTABLE CODE
+DATA SEGMENT - ANY DATA we know about during compile time , global values
+HEAP - memory that is dynamically allocated.. malloc
+
+STACK FRAME - CHUNK OF MEMORY that works in this way
+
+when we run a program, stack frames are put in stack.
+STACK IS GOING TO START at the highest point in memory
+and grow towards the low memory.
+
+STACK GROWS TOWARDS HEAP
+HEAP GROWS TOWARDS STACK
+
+
+so we put a stack frame on stack when we run the program
+
+stack frame consists of
+
+Function Local Vars
+Base Pointer - points to bottom of the stack
+Return Pointer - instruction pointer, instruction where we have to jump back to
+Calling Parameters - calling parameters to that function
+
+in stack frame we have attacks like buffer overflow and format string attacks.
+
+
+
+
+
+
+
+high memory fffff

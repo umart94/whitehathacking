@@ -1,0 +1,29 @@
+be aware that activites that we do on systems are getting logged
+
+clean those logs
+
+logs on linux directory are stored on 
+
+/var/log
+
+
+the /var filesystem
+
+mountpoint in the filesystem
+this is where variable data is stored.
+
+
+sudo cat auth.log
+contains auth information
+
+dmessage file - contains all of the kernel messages.
+
+
+linux - logs in /var/logs
+mac console
+windows computer management windows logs. - text files and presenting them in a gui.
+
+policies that we want to set audit for
+
+e.g success audit turned on for logons.
+

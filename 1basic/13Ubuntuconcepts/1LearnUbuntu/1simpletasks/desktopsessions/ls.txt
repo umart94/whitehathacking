@@ -1,0 +1,2 @@
+ls -la command will show file attributes.
+ls -lah ( human readable)

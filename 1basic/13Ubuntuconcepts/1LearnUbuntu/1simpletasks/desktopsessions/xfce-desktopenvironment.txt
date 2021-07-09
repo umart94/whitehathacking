@@ -1,0 +1,9 @@
+Ubuntu: sudo apt-get install xubuntu-desktop (package description; direct install)
+
+
+kde
+
+mate
+
+cinammon
+

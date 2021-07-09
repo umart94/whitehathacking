@@ -1,0 +1,10 @@
+source port destination port and length
+
+return message converts source port to destination port.
+
+length is minimal amount of checking to see if it is different
+checksum to check if nothing was tampered with.
+
+
+DNS needs fast response times. so they use UDP.
+

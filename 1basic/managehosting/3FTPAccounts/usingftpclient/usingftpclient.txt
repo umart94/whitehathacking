@@ -1,0 +1,13 @@
+download an ftp client like filezilla on windows and cyberduck on macs
+
+note that not all servers support SFTP. , although it is more secure.
+ftps has issues with firewalls and certificates.
+
+website root goes to httpdocs folder, or public html folder
+
+different hosts have different names for this folder.
+
+when we will connect to client folder through ftp
+client can only see 1 folder ( whatever folder he has access to)
+he cannot view the public server directory.
+

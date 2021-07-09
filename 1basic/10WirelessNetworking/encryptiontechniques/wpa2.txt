@@ -1,0 +1,15 @@
+presharedkey
+password for however many number of digits.
+
+WPA2 Enterprise
+
+automatic mode or
+
+eap-tls
+
+username / password
+
+with enterprise encryption 
+radio server that supports authentication for user,pwd
+
+

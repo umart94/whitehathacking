@@ -1,0 +1,22 @@
+iptables - add firewall rules - change the policies etc.
+
+its just a command to use to replace in memory the rules in linux.
+input chain
+forward chain
+output chain
+
+ACCEPT a subnet
+
+DROP a subnet 
+
+if we have multiple interfaces in a system like eth0 , eth1 we can configure them to drop or accept traffic..
+
+
+NEW ,ESTABLISHED state
+allow new and established messages in and out of network..
+
+-m limit to 25 connections , ( prevents syn flooding attacks )
+
+drop messages with invalid states
+
+log the messages

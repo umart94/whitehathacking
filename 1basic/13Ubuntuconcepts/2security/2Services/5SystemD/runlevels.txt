@@ -1,0 +1,63 @@
+ways of grouping services together
+we get services we want
+
+ls /etc/rc*
+
+rc0
+
+shutting the machine down
+starting the machine.
+
+run level 1
+single user mode
+
+
+we start by adding additional services as we go up the levels.
+
+until we get all the way upto run level 5
+
+which is full GUI  plus network interface..
+
+ls /etc/rc*
+
+rc6 is actually reboot
+
+
+S and K
+
+these are links.
+
+ls -la /etc/rc3.d
+
+links to startup scripts that are in etc/init.d
+
+if it says S that is a startup script.
+
+
+run level 0 has K scripts
+
+these are when the system is shutting down
+
+they run in ascii order
+
+K01
+K10
+
+k01 runs before k10
+
+how to determine what run level we are in ?
+
+
+
+less /etc/inittab
+
+Back in the days the "System-V" init service was used in Ubuntu, and it used the /etc/inittab file.
+
+Some time ago (around 2006) the "Upstart" init service replaced SysV. During these days you could follow the top answer and use man inittab to get info on this change.
+
+At the time of writing (e.g. for Ubuntu 16.04) the "systemd" boot process is in use and there is no reference left to "inittab" (e.g. if you do apropos inittab you'll probably not find anything). Instead you could do man runlevel to get similar information.
+
+Bottom line: the /etc/inittab file is nowhere, likely because you use a newer version for Ubuntu that has a different init service, e.g. systemd
+
+
+

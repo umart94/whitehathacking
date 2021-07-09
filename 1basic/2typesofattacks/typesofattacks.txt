@@ -1,0 +1,33 @@
+defacing
+
+
+making alterations to something
+primarily a website
+
+Buffer Overflows
+pieces of data in memory called buffers
+when too much data is sent, it can overflow
+
+because of stack memory and storing return addresses, a buffer overflow can lead to control of program flow.
+
+Format String attack
+
+instead of the format strings in the functions
+we insert commands, this can yield information off the stack being presented to the user.
+
+
+Denial Of Service
+any attack or action that prevents a service from being available to its legitimate authorized users.
+
+syn flood, ping flood, smurf attack, malformed packets.
+
+
+Distributed Denial Of Service
+
+different from DoS
+
+
+a DDoS is a coordinated denial of service making use of several hosts in several locations
+overwhelming use of resources
+often botnets
+first known DDoS attack used a tool called Stacheldraht

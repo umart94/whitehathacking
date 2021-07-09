@@ -1,0 +1,9 @@
+wep is now insecure
+wep uses a 10 or 26 digit password
+it uses RC4 stream cipher
+
+OpenSystem
+SharedKey - password to authenticate.
+
+initialization vector of algorithm - vulnerability..
+

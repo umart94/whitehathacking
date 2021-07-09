@@ -1,0 +1,13 @@
+in linux , devices are mounted under /mnt (generally)
+
+or /media
+
+depends on distro.
+
+/mount
+
+
+sudo mount /dev/md0 /mnt ( raid array device) specify a place where we want to mount the device, where we dont have any content in directory.
+sudo ls /mnt
+
+sudo umount /mnt

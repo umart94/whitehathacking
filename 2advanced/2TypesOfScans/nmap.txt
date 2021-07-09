@@ -1,0 +1,16 @@
+SYN SCAN -sS/-sT/sA/sW/sM  TCP SYN/Connect/ACK/Window/Maimon Scans
+it does half open connection
+
+-sT
+connect scan, three way handshake..
+
+
+
+
+protocol scan
+
+sudo -s0 IP
+
+
+will show different ip protocols running on the systems
+

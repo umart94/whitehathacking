@@ -1,0 +1,16 @@
+www.google.com
+
+hostname for a domain
+
+1. know ip address of a domain
+
+host www.google.com
+
+
+2. nslookup www.google.com
+
+
+3. dig www.google.ocm
+
+
+4. dig ipaddress

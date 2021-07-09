@@ -1,0 +1,8 @@
+inlcudes for standard libraries.
+
+
+
+the variable is stored LOCALLY IN THE STACK FRAME, BUT THE ADDRESS IT POINTS TO IS TO
+dynamic allocation for heap memory
+
+we dont provide format string

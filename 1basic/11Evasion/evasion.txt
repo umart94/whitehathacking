@@ -1,0 +1,7 @@
+avoid firewall
+avoid Intrusion detection systems
+
+Log alteration
+
+
+hiding amidst noise

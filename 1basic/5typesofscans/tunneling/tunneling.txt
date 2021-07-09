@@ -1,0 +1,25 @@
+taking a piece of data
+
+and stuffing it in another piece of data
+
+in going through the tunnel we cannot be seen
+we would have to be inside the tunnel to view the data.
+
+data that we are sending we do not want that to be seen
+restrictions on the network
+firewalls - that prevent data from entering or exiting 
+
+we need tunnels for data to go through
+
+go to localhost on the other side using port 2300 and dest port 23. on localhost.
+ssh user@IP -L2300:localhost:23
+
+telnet localhost 2300
+
+
+sudo ssh user@IP -L23:localhost:23
+
+since we are using standard port, we need sudo privileges.
+
+httptunnel package.
+

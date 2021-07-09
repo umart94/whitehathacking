@@ -1,0 +1,3 @@
+. dot is local or current directory.
+
+.. is the directory above

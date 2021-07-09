@@ -1,0 +1,23 @@
+ubuntu smb - package is samba
+cd /etc/samba
+
+configure samba.conf
+
+[web]
+	comment = Web root file share
+	path = /var/www
+	read only = no
+	
+	
+restart samba
+
+if we want to edit php files from somewhere else.
+
+ls -la /var/www
+
+RECURSIVE chown
+sudo chown -R umartariq /var/www
+
+sudo service smbd stop
+sudo service smbd start
+sudo service smbd restart

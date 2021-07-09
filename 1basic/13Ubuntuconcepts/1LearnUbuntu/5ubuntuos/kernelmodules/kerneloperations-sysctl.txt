@@ -1,0 +1,21 @@
+parameters within the kernel which we can change
+
+we can change it using sysctl
+
+sysctl.conf file has configuration for sysctl
+
+sudo sysctl net.ipv4.ip_forward
+
+check status of these settings / parameters
+
+sudo sysctl net.ipv4.ip_forward=1
+
+if we reboot the system the changes will not persist
+
+so we will actually have to edit sysctl.conf file using sudo privilege.
+
+
+and then 
+run
+
+sudo sysctl -p

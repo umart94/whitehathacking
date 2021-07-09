@@ -1,0 +1,28 @@
+sudo apt-get install tcpd
+
+tcp wrappers is designed to wrap a service program
+we might use this for telnet, ftp, or a service
+that does not have its own management for access management.
+
+i.e which users can access which service in which configuration mode.
+
+
+for e.g : only allow telnet on local network.
+
+
+hosts.allow file,
+in etc directory
+WHITELIST = hosts.allow
+
+
+hosts.deny file,
+blacklist,
+denying access.
+
+if nothing is in these files, we grant access.
+
+allow some
+deny everything else.
+
+
+

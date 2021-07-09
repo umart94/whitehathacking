@@ -1,0 +1,46 @@
+in symmetric encryption , we use the same key
+it is faster than asymmetric encryption
+we can use algorithms like aes, des.
+
+
+download aescrypt from website.
+gunzip AESCrypt-GUI-3.11-Linux-x86_64-Install.gz
+
+Install Directory:
+            /usr/share/aescrypt
+
+    Setup Type:
+            Typical
+			
+touch text.txt
+echo 'This is a test' > data.txt
+
+cat > text.txt
+then type text
+and exit
+
+
+aescrypt -e -p supersecretpassword a.txt
+this will generate a.txt.aes file ( encrypted file)
+
+aescrypt -d -p supersecretpassword a.txt.aes
+
+
+this is symmetric key encryption to encrypt a file
+it uses either stream or block ciphers.
+
+block - fixed length block - 64 bits encrypted at a time. ( if less number of bits , fill it with padding bits )
+
+stream - 
+
+
+Asymmetric - uses two different keys - public key and private key
+uses longer key length
+longer process
+slower encryption
+
+use is for signing documents or emails - private key signs something, public key verifies signature.
+
+who you got the file from is who sent it.
+decrypt and encrypt messages.
+

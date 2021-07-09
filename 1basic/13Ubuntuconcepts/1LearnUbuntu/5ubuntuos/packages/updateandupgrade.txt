@@ -1,0 +1,6 @@
+apt-get update
+apt-get upgrade
+
+in some distributions we had to figure out dependencies ourselves. 
+
+in debian and ubuntu, the apt system figures out this for us.

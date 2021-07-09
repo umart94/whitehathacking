@@ -1,0 +1,4 @@
+sudo apt-get install smartmontools
+man smartctl
+
+sudo smartctl -a /dev/sda

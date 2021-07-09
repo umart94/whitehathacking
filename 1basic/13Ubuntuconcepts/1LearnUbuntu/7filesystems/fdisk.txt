@@ -1,0 +1,33 @@
+fdisk is partitioning utility
+
+devices /dev/sda
+/dev/sdb
+
+sudo fdisk /dev/sdb or /dev/sda
+
+command : n ( for new )
+
+partition type:
+p for primary
+e for extended.
+
+partition number (1-4) default 1
+first sector
+last sector
+
+command : w ( write the changes)
+
+
+-------------------
+make ext2 file system
+
+add journalling, ext3 file system
+ext4
+sudo mkfs.ext4 file system. ( used by linux systems )
+
+sudo mke2fs -j
+
+sudo mkfs.ext4 /dev/sdb1
+
+make a ext4 filesystem on the first partition on sdb hard drive device.
+

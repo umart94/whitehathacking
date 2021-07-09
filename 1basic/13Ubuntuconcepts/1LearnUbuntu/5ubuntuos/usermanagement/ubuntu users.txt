@@ -1,0 +1,21 @@
+user database in a linux
+
+
+sudo cat /etc/passwd
+
+list of all users on our system
+
+x means password is stored somewhere else
+
+fields are delimited using colons
+
+user: password : primary user id ( a number ) : group id : name of user : home directory for user : default shell that the user would use.
+
+sudo cat /etc/shadow
+
+this is the password file called a shadow file
+we can see the passwords for users , stored with cryptographic hashes.
+
+sudo cat /etc/group
+
+list of all groups on the system  and users that belong to that group.

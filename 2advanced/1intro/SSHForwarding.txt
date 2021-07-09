@@ -1,0 +1,6 @@
+ssh -f user@IP -L 8888:www.google.com:80 -N
+
+telnet localhost 8888
+
+
+

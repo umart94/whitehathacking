@@ -1,0 +1,14 @@
+
+sudo apt update
+sudo apt install wordpress php libapache2-mod-php mysql-server php-mysql
+
+login to mysql as root
+
+
+CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'password';
+
+GRANT ALL ON wordpress.* TO 'wordpress'@'localhost';
+
+

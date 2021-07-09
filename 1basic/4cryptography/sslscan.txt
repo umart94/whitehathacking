@@ -1,0 +1,6 @@
+sslscan www.domainname.com
+
+preferred ciphers used
+
+and also a sha ( hmac hash) to determine if message was not altered with.
+

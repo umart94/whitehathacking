@@ -1,0 +1,10 @@
+
+https://www.kismetwireless.net/docs/readme/suid/
+sudo apt-get install kismet
+
+select yes when setup asks for -- setupid / setuid root
+
+add current user to kismet group..
+
+this is for allowing only users of kismet user group to use kismet software.
+

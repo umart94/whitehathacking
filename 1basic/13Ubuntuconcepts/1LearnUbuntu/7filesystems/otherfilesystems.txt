@@ -1,0 +1,11 @@
+ext - linux
+minx - pre cursor to ext
+msdos - msdos device
+
+
+sudo mkfs.msdos /dev/md0
+sudo mount /dev/md0 /mnt
+vfat (rw) more recent fat system. can be used on any windows system.
+
+jfs
+xfs etc.

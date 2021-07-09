@@ -1,0 +1,6 @@
+the custom domain hosting 1on1
+is different from plesk and cpanel domain hosting types websites bluehost and mediatemple
+
+because it handles the emails on a seperate domain
+
+using imap , pop and smtp imap.1and1.com etc.

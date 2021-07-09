@@ -1,0 +1,32 @@
+get an idea of the entire Scope of your project.
+
+List of domain names
+database, spreadsheet to keep track of information.
+
+domain names -- infiniteskills.com
+network blocks 12.34.56.78
+
+range of internal blocks - specific ip addresses for critical systems ,web servers, email servers,
+
+system architecture - Intel, Windows , UNIX.
+
+Access Control Lists - guess them by doing port scans
+
+IDS - intrusion detection system
+
+system enumeration -- user names, group names
+
+system banners, routing tables, snmp info
+
+DNS hostnames.
+
+Networking protocols.. TCP/IP IPX/SPX , DECNET ,APPLETALK, internal dns server different from external server.
+
+remote access possibilities
+
+VPN or dialup
+
+extranet ? - partner facilities connections, connection points ? access control ? public or private ? vpn tunnels?
+
+
+

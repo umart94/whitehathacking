@@ -1,0 +1,20 @@
+ldap is lightweight directory access protocol
+folder directory where we can store lots of information
+
+LDAP server - store information about users, systems, printers, resources in a large enterprise network environment.
+
+microsoft moved to ldap model to store information in windows server family.
+
+Active directory is an implementation of LDAP - like a database - stores information and we can query is
+
+ldap is hierarchical in nature
+ldap is lightweight, its subset of larger set of protocols related to x.509 certificates.
+
+
+
+
+
+JXplorer
+
+we can change DN name - distinguished name
+

@@ -1,0 +1,16 @@
+we may need to create webmail and email addresses 
+
+mail forward
+
+mail forward is an email address that doesnt get any email sent to this address
+but it will be forwarded to an inbox that you specify.
+
+e.g we create info@domain.com
+and our admin user is umar@domain.com
+
+so we forward all mail sent to info@domain.com to umar@domain.com
+
+if we send an email to info@domain.com
+and choose the option Discard with error to sender ( at SMTP Time )
+
+it will not forward the mail, and instead use a default failure message specified by us. and send this to the client.

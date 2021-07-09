@@ -1,0 +1,25 @@
+wifi explorer.
+
+enterprise networks
+1. someone brings access point close to access points in an enterprise.
+
+circumvent a wireless access policy ( LOL !! )
+
+
+2. get an access point(rogue), and make it look similiar to another access point..
+copying authentication for the network
+and instead of the actual wireless point the rogue wireless network point shows up.
+
+
+risks:
+whether it looks identical enough or not
+possibility of being detected
+
+3. get the legitimate access point offf the air by DoS
+
+4. make an access point in a public place with no security.
+
+5. set mobile hotspot - your computer as a wifi access point as attacker.
+
+
+

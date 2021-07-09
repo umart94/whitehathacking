@@ -1,0 +1,39 @@
+applications that run in the background
+we would not interact with them, except services port in a network application.
+
+service status started
+
+network services have listener ports
+
+
+sudo netstat -lp
+
+
+vnc service, share desktop from local system to remote systems.
+
+
+ls /etc/init.d
+
+these are startup and shutdown scripts 
+services that are available on linux
+
+capable of running ( doesnt mean that they are runnning)
+
+sudo /etc/init.d/mysql restart
+
+service utility that will startup and shutdown services.
+
+sudo service mysql stop
+
+
+
+run sudo netstat -lp
+then ps auxww | grep mysql
+
+to find which user is running mysql.
+
+
+on windows
+services that run as local system.
+
+local system has a lot of privileges.

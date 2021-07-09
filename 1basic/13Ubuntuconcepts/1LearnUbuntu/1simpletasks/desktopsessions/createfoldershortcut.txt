@@ -1,0 +1,27 @@
+ln -s $PWD ~/Desktop/
+
+For Application Shortcuts:
+I think TheBuntuNewb's answer is pretty good. Do that using file manager:
+
+Open /usr/share/applications
+Copy the application shortcut to desktop
+Right click on the shortcut on the desktop and select Allow Launching
+For Folder/File shortcuts:
+Either directly use the terminal to create a symbolic link
+
+ln -s <complete path to dir> <shortcut save location>
+or
+
+Open the folder in the file manager (nautilus), navigate to the directory to which you want to create a shortcut to.
+
+Right click and select Open in Terminal.
+
+For shortcut to current directory, type and execute
+
+ln -s $PWD ~/Desktop/
+For shortcut to a file/folder inside the current directory, type and execute
+
+ln -s $PWD/filename ~/Desktop/
+or
+
+ln -s $PWD/dirname ~/Desktop/

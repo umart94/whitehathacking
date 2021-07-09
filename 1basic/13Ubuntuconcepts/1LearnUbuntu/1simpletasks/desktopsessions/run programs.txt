@@ -1,0 +1,7 @@
+firefox & ( send program to background )
+from terminal standpoint.
+
+
+fg - for sending program to foreground.
+
+

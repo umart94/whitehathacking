@@ -1,0 +1,22 @@
+provides better security.
+bind different hard drives together to create one larger drive ( using mirroring)
+
+create a mirrored raid set.
+
+can be done using mdadm
+
+sudo mdadm --create /dev/md0 --level=0 --raid-devices=2 /dev/sdb1 /dev/sdc1
+
+sudo mkfs.ext4 /dev/md0
+
+filesystem written out
+mount it and start writing data
+
+mirrored set by using 2 seperate partitions.
+seperate partitions on two different hard drives
+
+any data that is written to this is going to be written to both.
+
+if 1 of the devices fails, we still have data on 1 device.
+
+this can be done upto a large number of RAID levels.

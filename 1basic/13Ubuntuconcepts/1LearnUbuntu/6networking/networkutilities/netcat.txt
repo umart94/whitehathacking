@@ -1,0 +1,12 @@
+nc www.google.com 80
+
+
+nc -l -p 8000 ( set up a listener)
+
+nc localhost 8000
+
+we can transfer files
+command line messages
+troubleshooting messages
+
+communication stream between 2 windows on a local system, or across systems across a network

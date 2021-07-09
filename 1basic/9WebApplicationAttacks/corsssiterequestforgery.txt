@@ -1,0 +1,15 @@
+get a user to perform a function on web application without them being aware of it
+
+get for post
+
+actually sending data to the server , using a get request rather than a post request.
+
+
+get request in an image tag
+image wont show
+and user will generate a request for the server where this is loaded.
+image tag generates a get request.
+image wont be there
+
+do something on the server without our knowledge.
+

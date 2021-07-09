@@ -1,0 +1,60 @@
+hping used for crafting packets.
+
+use evasive tactics to get around intrusion detection systems and firewalls and network intrusion protection systems.
+
+sudo hping3 -h
+
+tcp mode
+raw ip mode - modify any sort of ip packet
+icmp mode
+udp mode
+spoof source address
+time to live value
+set an identification
+
+split packets into fragments
+set source port and destination ports
+set window size.
+
+sudo hping3 192.168.100.1 -U -S -s 55355 -d 8080
+
+-U - Urgent flag
+-S SYN flag
+
+-s source port
+
+-d destination port.
+
+can potentially avoid firewalls
+used to run on systems that are vulnerable to these type of attacks. ( where malformed packets can run on network )
+
+we can use PackETH to generate a ethernet packet ( edit its properties )
+
+Link layer
+vlan tag - 802.1q vlan fields
+specify next layer is ipv4 ipv6 arp packet or user defined packet
+
+change ip version
+
+
+we can change the protocol values
+change all of the ip headers.
+
+next layer tcp
+source port
+destination port
+
+set flags
+
+URG
+PSH
+SYN
+
+set tcp payload
+set pattern
+set length
+apply pattern
+
+save a packet
+restore it later.
+

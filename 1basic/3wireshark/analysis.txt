@@ -1,0 +1,46 @@
+wireshark has a telephony menu that deals with VoIP options.
+wireshark will show statistics about voice calls
+
+
+go to option VoIP Calls
+jitter latency.
+
+wireshark can also launch RTP player to listen to selected calls.
+
+if the voice stream is not encrypted then we can also listen to the stream.
+
+it can also show the flow diagram about selected calls and signalling messages for voip calls ( broken down in order )
+
+in statistics
+
+we can bring up endpoints
+
+this shows all of the endpoints in the current communication
+
+this will show ethernet , ipv4, ipv6, tcp udp ports and all information about communication.
+
+shows endpoints that are doing communications.
+
+statistics shows conversations
+
+IO Graphs
+we can set bytes / tick and bits per tick..
+
+
+Flow graph
+
+all packets -> general flow shows a ladder diagram.
+
+in statistics we can see http , number of requests , filters on how many requests.
+
+WLAN traffic shows wireless traffic.
+
+
+analyze menu -> shows list of enabled protocols.
+
+Decode as in analyze
+
+
+follow tcp stream -> ascii text equivalent of stream.
+we can change to ebcdic hex dump c arrays ( character array definition of it )
+

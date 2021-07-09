@@ -1,0 +1,24 @@
+Bluehost - control panel called cPanel
+Mediatemple - virtual server that uses Plesk
+one on one - custom panel.
+
+
+cPanel has the cPanel button
+
+and Plesk has the seperate area for Plesk management.
+
+Hosting Service e.g (dv) Dedicated Virtual 4.0 - 512 MB
+
+set plesk and cPanel passwords, and then enter the passwords to enter the admin panel areas.
+
+
+plesk will assign an ip address
+it is just a physical location of the machine on the internet.
+
+with plesk we can setup multiple websites
+so each website needs a username and password.
+
+
+one on one provides a custom panel
+
+linux hosting..

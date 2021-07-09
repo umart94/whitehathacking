@@ -1,0 +1,46 @@
+. is current directory
+
+.. is directory above.
+
+touch textfile2.txt
+
+will create a file with size 0
+
+- - from left most side, indicates that whether the file is a directory, whether it is a file, or whether there is something special about the file.. - indicates there are no special bits.
+
+permissions
+
+owner - is user rw means read and write
+
+these are bits that are set, that are permissions
+read is 4
+write is 2
+finally we have execute
+in unix execute flag if set makes file executable.
+if execute is not set- then that flag is set as dash -
+execute flag is 1.
+
+read is 4 (r)
+write is 2 (w)
+executable is 1 (x)
+
+
+group
+world ( everybody)
+
+
+owner
+group
+world
+
+chmod u+w
+chmod 744 - owner to have rwx , then read for group and world.
+
+chmod 744 textfile.txt
+
+chmod g+x ( g is for group ) , (u is for user ) , 
++ for adding the permission
+- for removing the permission.
+
+
+

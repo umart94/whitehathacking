@@ -1,0 +1,21 @@
+ability to have scripts execute from inside form fields inside a web application
+
+manipulate page
+grab data from user machine - cookies , information , javcascript has access to.
+
+types:
+
+1. persistent cross site scripting
+
+stored and retrieved later on
+
+2. non stored
+script plugin needs to be plugged into the forms on website.
+
+script grabs cookie
+transmits it back to somewhere else
+and logs into another website.
+potentially log in as us.
+
+cookie was vulnerable to not being associated with a specific machine.
+

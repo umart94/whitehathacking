@@ -1,0 +1,34 @@
+services are programs that run in the background
+services is a program that gives status on different services at boot time - in windows
+
+
+
+
+services are scripts
+startup programs
+start stop restart check status etc. on services
+located in in linux /etc/init.d
+
+init.d is the source for all of the scripts in ubuntu ( services)
+
+
+ls /etc/rc3.d
+
+ls -la /etc/rc3.d/ ( run level )
+they are going to point to scripts in init.d
+
+sudo /etc/init.d/smbd status
+
+sudo service --status-all
+
+- means service not running
++ means service running
+? means maybe disabled service
+
+
+sudo service smbd stop
+sudo service smbd start
+
+ps auxw | grep smbd
+
+

@@ -1,0 +1,38 @@
+packages are built from source - in source based distributions
+
+in binary based distributions - someone already has compiled the code and we install the binary packages.
+
+
+in binary based distributions there is a disadvantage, i.e the distribution themselves determine which dependencies will get installed.
+
+many packages include or not include other packages.
+
+distributions like redhat ubuntu make determinations for us..
+
+
+arch linux gives us ability to build own packages depending on packages and sub dependencies. ( using pacman )
+
+gentoo is also source based - linux from scratch
+
+I'm a die hard Gentoo fan. There are a few advantages to using a source-based distribution, which I will describe in a specifically Gentoo context:
+
+advantages of source based distros.
+
+
+Optional compile-time components.
+
+Most software packages have several optional components that can be included or excluded when the software is compiled. With binary based distros, you typically just have to accept whatever settings the distro developer has picked -- like it or not. With Gentoo, you can set USE flags which allow to you to determine (either globally or on a per-package basis) what types of components are excluded or included.
+
+While generally more functionality is better, for your personal system you might want something different: for example, you might not need vim to have X11 support, because it is being built for a server which does not have X11. Or you might want to build some other program without gnome support so you don't have to install an army of gnome library dependencies.
+
+Security.
+
+By default in Gentoo, the source code for every program or library you install is downloaded and archived on your system for easy access. Furthermore, the software is all compiled on your own system. This means that you don't have to trust anyone if you don't want to. All your source code is within easy reach, and you can view the code, changelogs, etc. quickly before or after actually compiling it.
+
+Software development.
+
+Software development is a lot more fun under Gentoo for a few reasons. For one, simply installing a package usually installs all the headers and other dependencies you need to develop for it. Also, a big plus is Gentoo's overlay system. while this is not really related to the fact that Gentoo is a source-based distro, it is nevertheless very helpful: it allows you usually to integrate the latest and greatest versions of a particular category of compilers, libraries, et cetera while leaving the rest of your system in its "stable" form.
+
+Performance.
+
+While source-based distributions are not a magic bullet for better performance, they can provide some improvements. In particular, you can set global build flags, which allow you to build all programs on your system with certain compiler optimizations suitable for the specific brand of processor on your system.

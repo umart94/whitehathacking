@@ -1,0 +1,16 @@
+Capturing packets on wireless LANs
+How can I capture raw 802.11 frames, including non-data (management, beacon) frames?
+That depends on the operating system on which you’re running, and on the 802.11 interface on which you’re capturing.
+
+This would probably require that you capture in promiscuous mode or in the mode called "monitor mode" or "RFMON mode". On some platforms, or with some cards, this might require that you capture in monitor mode - promiscuous mode might not be sufficient. If you want to capture traffic on networks other than the one with which you’re associated, you will have to capture in monitor mode.
+
+Not all operating systems support capturing non-data packets and, even on operating systems that do support it, not all drivers, and thus not all interfaces, support it. Even on those that do, monitor mode might not be supported by the operating system or by the drivers for all interfaces.
+
+NOTE: an interface running in monitor mode will, on most if not all platforms, not be able to act as a regular network interface; putting it into monitor mode will, in effect, take your machine off of whatever network it’s on as long as the interface is in monitor mode, allowing it only to passively capture packets.
+
+This means that you should disable name resolution when capturing in monitor mode; otherwise, when Wireshark (or TShark, or tcpdump) tries to display IP addresses as host names, it will probably block for a long time trying to resolve the name because it will not be able to communicate with any DNS or NIS servers.
+
+See the Wireshark Wiki item on 802.11 capturing for details.
+
+How do I capture on an 802.11 device in monitor mode?
+Whether you will be able to capture in monitor mode depends on the operating system, adapter, and driver you’re using. See the previous question for information on monitor mode, including a link to the Wireshark Wiki page that gives details on 802.11 capturing.

@@ -1,0 +1,9 @@
+cross site scripting is a browser only attack.
+
+sql injection attacks the web app infrastructure and database server.
+
+do something to or with info stored in a database
+
+get data back
+log in to servers.
+

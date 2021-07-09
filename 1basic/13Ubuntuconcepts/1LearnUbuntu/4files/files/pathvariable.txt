@@ -1,0 +1,23 @@
+path variable is where we would look for executable running paths.
+
+echo $PATH
+
+if system needs to look for a program then it would look in these directories.
+
+export PATH=$PATH:~/bin
+echo $PATH
+
+export PATH=/usr/local/games:/home/umartariq/bin
+
+export is a built in function of the shell
+
+export PATH=/bin:/usr/local/games:~/bin
+
+
+if executable is not in the path it will not run.
+
+./ls
+
+. is current directory slash is also current directory.
+
+/usr/bin/clear

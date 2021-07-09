@@ -1,0 +1,44 @@
+used to manage network devices
+extract network info
+set config parameters.
+
+3 versions starting with
+
+v1. was insecure. - didnt have encryption , no privacy involved in running snmp and server it communicated with. 
+
+(community string was insecure)
+community strings with v1 were well known and defaulted to words public and private.
+
+public gather read only data.
+private was for write access configuration parameters.
+
+
+
+
+
+snmp set parameters
+
+MIB is management information base.
+
+
+
+snmpwalk -v 1 -c public 192.168.1.123
+
+linux kernel information
+system uptime
+system date
+bootimage - boot device with
+uuid of system
+processes
+other parameters - system processes.
+
+
+
+v3
+iReasoning MIB browser.
+
+
+
+
+
+

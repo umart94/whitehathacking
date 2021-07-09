@@ -1,0 +1,35 @@
+a program that is running in the background
+and waits for requests.
+
+maybe webserver
+webservice
+etc.
+
+there are a number of services running on linux
+
+/etc/init.d
+
+
+these are the scripts that manage the services running on our particular system.
+
+bash scripts
+take parameters
+
+check status of a service like this : 
+sudo /etc/init.d/dbus status
+
+stop and start services
+
+exim4 - mailserver
+sudo /etc/init.d/exim4 stop
+sudo /etc/init.d/exim4 status
+sudo /etc/init.d/exim4 start
+sudo /etc/init.d/exim4 status
+
+
+
+
+use service utility
+
+sudo service exim4 status
+sudo service exim4 restart

@@ -1,0 +1,16 @@
+cp textfile.txt /home/umartariq/Downloads
+cp file destination
+
+rm to remove
+
+rm file
+
+mv to move
+
+mv file destination
+
+
+mv file1 file2. moved and renamed to file2
+
+mv file2 .. ( move it up one directory)
+

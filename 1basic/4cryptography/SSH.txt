@@ -1,0 +1,47 @@
+encrypted version of telnet like protocol
+
+
+step1:
+type
+
+ssh-keygen
+
+generate public private rsa key pair.
+
+step2:
+
+use scp to use encrypted copy using ssh encrypted protocol
+
+it does a copy from one system to another..
+
+
+run:
+
+scp id_rsa.pub user@IPADDRESS:.ssh
+
+
+Step3:
+
+cat id_rsa.pub >> authorized_keys2 ( file)
+
+
+cat authorized_keys2 file.
+
+
+ssh user@ipaddress
+
+known_hosts file in .ssh folder
+
+cat known_hosts
+
+these are the keys for all of the systems that we have connected to
+from this system.
+
+
+config file , original os , a file that just gets copied over.
+
+entry for hosts
+specify login name
+specify alias for ip address
+
+ssh v1 , we can decrypt the communication stream..

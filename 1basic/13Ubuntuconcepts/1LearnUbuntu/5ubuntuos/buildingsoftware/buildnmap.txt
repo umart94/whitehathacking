@@ -1,0 +1,98 @@
+tar xjpf nmap-7.80.tar.bz2
+
+
+This is the traditional compile-it-yourself format. The Nmap tarball compiles under Linux, Mac OS X, Windows, and many UNIX platforms (Solaris, Free/Net/OpenBSD, etc.) It includes Zenmap, the GUI frontend.
+
+Detailed Linux/BSD/Solaris compilation instructions and options are provided here, though this usually does the trick:
+
+bzip2 -cd nmap-7.80.tar.bz2 | tar xvf -
+cd nmap-7.80
+./configure
+make
+su root
+make install
+
+
+make sure that ./configure does not give any errors like " XYZ package not found "
+
+then install those packages
+i had to install
+gcc
+and 
+libpcap
+
+then run ./configure again
+
+The configure script is asking for the location of the OpenSSL library headers and *.so files, not the openssl executable. On Ubuntu/Debian systems, you can install these headers by installing the libssl-dev package. If you install it this way, you do not have to provide the location to the configure script; it will find it on its own.
+
+
+sudo apt-get libssl-dev
+
+Configured without: localdirs ndiff zenmap nmap-update
+
+
+check the option
+download source in software and update
+
+after that
+
+run the command
+
+sudo apt-get build-dep nmap
+
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  accountsservice-ubuntu-schemas gnome-screensaver gnome-system-tools indicator-applet indicator-appmenu indicator-bluetooth
+  indicator-datetime indicator-keyboard indicator-messages indicator-power indicator-printers indicator-session indicator-sound
+  jayatana libaccounts-glib0 libbamf3-2 libfcitx-config4 libfcitx-gclient1 libfcitx-utils0 libgnome-panel0 libllvm9 liboobs-1-5
+  libunity-gtk2-parser0 libunity-gtk3-parser0 libunity-settings-daemon1 liburl-dispatcher1 python3-psutil system-tools-backends
+  ubuntu-touch-sounds unity-greeter unity-gtk-module-common unity-gtk2-module unity-gtk3-module unity-settings-daemon
+  unity-settings-daemon-schemas
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev binutils-mingw-w64-i686 bison ca-certificates-java debhelper default-jdk-headless
+  default-jre-headless dh-autoreconf dh-python dh-strip-nondeterminism dwz flex gcc-mingw-w64-base gcc-mingw-w64-i686 gettext
+  intltool-debian java-common libarchive-zip-perl libblas-dev libblas3 libcroco3 libdebhelper-perl
+  libfile-stripnondeterminism-perl libgcrypt20-dev libgpg-error-dev liblinear-dev liblinear4 liblua5.3-dev libncurses-dev
+  libpcre16-3 libpcre3-dev libpcre32-3 libpcrecpp0v5 libreadline-dev libsigsegv2 libssh2-1 libssh2-1-dev libsub-override-perl
+  libtool lua-lpeg lua-lpeg-dev m4 mingw-w64-common mingw-w64-i686-dev openjdk-11-jdk-headless openjdk-11-jre-headless po-debconf
+  python3-distutils zlib1g-dev
+
+
+these are dependencies for nmap
+
+
+sudo apt-get build-dep nmap
+
+so this command installed all the dependencies for us
+
+now we can run ./configure again
+
+sudo apt-get install git wget build-essential checkinstall libpcre3-dev libssl-dev libpcap-dev
+
+now run ./configure again
+
+
+/configure --with-localdirs
+
+
+sudo apt install python3-pip
+
+
+
+It was removed from the repository due to relying on Python 2 which reached End-of-Life at the start of 2020. You can install Zenmap manually from 19.10 repository:
+
+mkdir -p ~/Downloads/zenmap
+cd ~/Downloads/zenmap
+
+wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-gtk2_2.24.0-6_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/n/nmap/zenmap_7.80+dfsg1-1build1_all.deb
+
+sudo apt install ./*.deb
+and enjoy.
+
+Note: I have filed bug-report launchpad as https://pad.lv/1876269 with packaging request.
+
+The GitHub issue tracker for porting Zenmap to Python 3 can be found here.
+
+

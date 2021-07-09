@@ -1,0 +1,9 @@
+sudo useradd -d /home/john -s /bin/bash -g staff -m john
+sudo usermod -g adm john
+sudo cat /etc/passwd
+sudo userdel john
+
+to change password
+
+use command passwd
+

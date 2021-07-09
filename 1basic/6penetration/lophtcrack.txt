@@ -1,0 +1,26 @@
+brute force attack
+checking lots of different password against a password we have got
+
+randomly checking or systematically checking for all of the different combinations of character positions
+
+we have to check for multiple lengths
+
+a000
+b000
+
+go through all of the potential positions in 5 or 6 character password.
+
+
+looking for written passwords.
+
+mnemonic devices.
+
+elite
+
+transposition to make it look like elite.
+
+#l173
+
+
+P455w0rd
+

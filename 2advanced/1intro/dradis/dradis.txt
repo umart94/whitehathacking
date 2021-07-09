@@ -1,0 +1,81 @@
+Burp Suite Scanner
+mediawiki
+nessus (v1, v2)
+NeXpose
+Nikto
+Nmap
+OpenVAS
+OSVDB
+Retina
+SureCheck
+VulnDB HQ
+w3af
+wXf
+Zed Attack Proxy
+
+
+Dradis framework supports that output from these suites be added to / and can be saved to efficient information gathering tool and present it in a variety of formats.
+
+its a self contained web app that provides a centralised repository of information to keep track of what has been done so far.
+
+best way for teams to cooperate.
+
+sudo apt-get install libsqlite3-dev
+sudo apt-get install zlib1g-dev
+git clone https://github.com/dradis/dradis-ce.git
+cd dradis-ce/
+
+OR
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install dradis
+sudo dradis
+
+
+manual testing of apps
+dradis creates a ruby on rails server.
+
+Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.
+
+Bundler is an exit from dependency hell, and ensures that the gems you need are present in development, staging, and production. Starting work on a project is as simple as bundle install.
+
+
+cd dradis-ce/
+
+Run the following in your command line:
+$ ./bin/setup
+if we run it like this, it will be installed for non super users as well
+if we run with sudo , it will require admin privilieges.
+
+
+
+
+bundle install
+
+The git source https://github.com/dradis/dradis-calculator_cvss.git is not yet checked out. Please run `bundle install` before trying to start your
+application
+
+
+
+
+./bin/rails server
+
+
+go to 127.0.0.1:3000 - this is the dradis config page.
+
+---------------------------INSTALLATION END -------------------------------
+
+
+
+
+------------------------- USING NOTES with dradis --------------------------------
+
+we can make to do notes
+
+we can import nessus files
+we can upload them to dradis
+
+the upload may fail, and the logs will show information
+
+

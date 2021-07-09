@@ -1,0 +1,21 @@
+host domain.com
+
+
+
+
+
+we can first do a dig mx record
+
+dig mx domain.com
+
+then we can use host command to view the ip address of the mx record ( mail server record )
+
+and then we can use
+
+whois -h whois.arin.net  1.2.3.4 ( this is the ip of domain.com )
+
+to view the details of the NetRange.
+
+
+check for different hostnames.
+

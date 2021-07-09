@@ -1,0 +1,42 @@
+gather data about the wifi
+
+aircrack
+
+utilities called airmon
+
+sudo airmon-ng
+
+this will show interfaces that are wireless capable.
+
+wlan0 is phyisical interface and mon0 is a duplicate.
+
+sudo airmon-ng start wlan0
+
+monitor mode enabled on mon1
+
+run airodump-ng on mon0
+
+sudo airodump-ng mon0
+
+
+ssid out of the capture file
+
+multiple cpus. - we can use different cpus
+
+specify wep key length
+specify wep key index
+
+disable bruteforce multithreading
+
+inorder to run aircrack we need a capture file.
+
+we grab a large amount of data
+
+upto multiple 100's of gigs or more..
+
+supply wordlist.
+
+
+weak wifi
+ssids will come and go due to low PWR of the signal
+

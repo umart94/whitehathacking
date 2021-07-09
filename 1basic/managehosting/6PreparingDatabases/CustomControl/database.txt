@@ -1,0 +1,22 @@
+data base are part of your server, but are created in a seperate host.
+we connect to a seperate host to connect to the database
+
+we can create a blog folder on our host
+and paste the wordpress files to that folder ( if we want wordpress to run as a blog)
+
+or else copy the entire folder to the root folder. ( if we want wordpress to manage our domain)
+
+
+wp-config-sample.php
+
+change it to wp-config.php
+
+in this file we will type the login credentials that we receive from our web host.
+when we created the database.
+
+
+from there we can type the information about the wordpress username
+this information will be then stored in the mysql database on the domain webhost.
+
+( the information we wrote in the wp-config.php) file.
+

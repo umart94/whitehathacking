@@ -1,0 +1,26 @@
+when we go to a web address like lynda.com or bluehost.com
+
+we are connecting to a web server that sends files stored on its hard drive
+
+how did files get there ?
+
+the files can be sent to a server using a protocol called ftp which stands for file transfer protocol
+
+in order to send files to a server using ftp we have to create a default ftp account on a domain
+and perhaps create a new ftp account so that the clients can send us files.
+
+we can add a new ftp account
+or use the default account
+
+we can configure ftp client
+we can setup coniguration files.
+
+a master ftp account has access to all of the folders
+but we can limit the client access by typing folder names here
+
+this client will only have access to the folder named "clients" inside the public_html folder.
+
+public_html is a folder where we place all of the files that will be accessible by a browser
+
+
+

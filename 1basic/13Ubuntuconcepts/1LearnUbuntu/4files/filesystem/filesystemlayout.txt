@@ -1,0 +1,38 @@
+/ - is root of whole filesystem
+
+~ - is the home directory of current user
+
+in linux there is just one file system and it all belongs under root.
+
+
+ls /
+
+
+bin - short for binary, where programs are
+etc - config files for programs
+boot - boot files , operating system , kernel files. including config file
+cdrom - mount point, if a cd is mounted , it would mount it join filesystem in this folder
+dev - every device gets its own file.
+lib - libraries , code that is pulled in by programs , linux uses these files to run some programs
+lib64 - 64 bit libraries
+media - usb stick mounted
+
+psf - parallels , host os files
+
+mnt - removable media
+
+opt- optional software
+proc - processor related data.
+every process is its own directory here with an ID
+
+root- root home directory
+run - temporary data
+sbin - system binaries.
+
+srv - types of servers , data stored here
+sys - system data
+temp - swap files are stored
+usr - user related data
+
+var directory has log directory that contains all logs of programs
+it changes a lot.

@@ -1,0 +1,44 @@
+each user is assigned permissions
+
+subset of total number of permissions
+
+
+privilege escalation - give more permissions than assigned.
+
+
+sudo nmap -sS -O 192.168.1.2  ( requires admin privilege ) - this is privilege escalation from normal user to superuser.
+
+sudo (/suːduː/ or /ˈsuːdoʊ/) is a program for Unix-like computer operating systems that allows users to run programs with the security privileges of another user, by default the superuser. It originally stood for "superuser do" as the older versions of sudo were designed to run commands only as the superuser
+
+
+switch user
+
+su -
+
+without user , the switch user command switches to root
+
+sudo su -
+
+this will authenticate as a root user.
+
+# indicates that we are a root user.
+
+in windows - admin privileges - escalation
+ 
+ 
+log in as an admin user.
+
+additional permissions
+setuid bit
+
+if it is on one of the files.
+executing causes context of program to get switched to a different user id. ( programs owner / file  owner )
+
+sudo find / -perm /6000 -type f -ls
+
+programs that require that programs be run under a user context. ( e.g root user)
+
+
+
+ 
+ 

@@ -1,0 +1,9 @@
+convert from machine code - binary to human readable program..
+
+optimized compiler will generate differently
+some compilers generate code differently.
+
+decompilation becomes challenging.
+
+legalilty of decompiler.
+

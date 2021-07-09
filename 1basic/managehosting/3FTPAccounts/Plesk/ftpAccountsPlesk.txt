@@ -1,0 +1,18 @@
+this plesk domain hosting website has 2 panels
+1 for controlling domain
+1 for controlling plesk
+
+
+to configure ftp, we have to enter the plesk control panel
+
+to go to the plesk control panel, go to the port domainname.com:8443
+
+first, we have to configure the ftp account through ftp access panel
+
+and then we have to configure the directory for ftp using file manager.
+
+there is a folder here called httpdocs , which is where we can put all the files that can be accessed by a browser.
+
+just like public html folder
+
+here we need to create the client directory inside the httpdocs folder.

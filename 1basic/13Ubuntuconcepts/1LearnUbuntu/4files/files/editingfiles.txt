@@ -1,0 +1,2 @@
+echo this is my file > myfile
+cat myfile myfile

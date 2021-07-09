@@ -1,0 +1,38 @@
+a certificate is a digital piece of data that tells who we really are
+it gives us the ability to encrypt messages.
+
+used in encrypted websites, using https connection, we are using a certificate.
+
+server offers a certificate to us,
+
+
+step1: generate a certificate authority. , Private Key.
+
+
+Data gets encrypted with the public key, and decrypted with the private key.. , they are mathematically linked.
+
+
+openssl genrsa -des3 -out ca.key 4096
+
+
+Step2: openssl req -new -x509 -days 365 -key ca.key -out ca.crt
+
+STEP3 : openssl x509 -text -in ca.crt
+
+self signed certificate.
+
+encryption
+does not give us validation - does not give non repudiation.
+
+certificate authority has its own certificate. - this is what we generated in step2.
+
+the certificate for a user is signed with this certificate for CA
+
+that CA certificate ( what the CA certificate would send to the user , which is its public certificate ) is then installed anywhere its going to be used.
+
+example are the certificate authorities in the browser.
+
+
+
+
+

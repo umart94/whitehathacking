@@ -1,0 +1,15 @@
+Stacheldraht
+command and control network , clients or bots in the internet somewhere
+
+somewhere else there is a master server that tells those clients what to do..
+
+in normal DoS - syn flood is sent.
+
+in DDoS there are command and control networks.
+uses hardcoded strings for hosts
+blowfish cipher to encrypt traffic between master server and clients.
+
+master slave, master zombie , client server model.
+
+bot is desktop system at home , infected , sending out spam , sending attacks to other websites.
+

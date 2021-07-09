@@ -1,0 +1,54 @@
+Operating system running on the server
+
+this is important decision as it will decide what type of software will be running on the machine.
+
+
+1. operating system
+2. server side scripting softwares
+3. version control softwares
+4. server softwares
+
+5. data handling
+amount of storage, users, how much information can be transferred at the same time.
+
+find the limits.
+
+
+6. domains and subdomains
+
+how many domains can we have on the same machine
+ability to have multiple websites on same account
+
+sub domains use text that appears before domain name
+
+e.g blog.umartariq.com etc.
+used as shortcuts.
+
+
+7. Custom Email Addresses can be created using the custom domain
+
+
+1. operating system
+2. server side scripting softwares
+3. version control softwares
+4. server softwares
+5. data handling
+6. domains and subdomains
+7. Custom Email Addresses can be created using the custom domain
+8. forwards - not a real mailbox , automatically sent to a different address.
+9. Mailing Lists and other services may also be provided
+10. Control Panel - interface to control website
+cPanel
+Plesk
+Hosts Custom Control panel.
+
+11. Databases - some servers can only support some type of databases. eg.
+mysql , oracle , ms sql server etc.
+
+e.g
+
+if 100 domains are supported
+and only 1 database is supported
+this will limit the amount of web applications to only 1, that can be hosted / installed on the server.
+since each application requires 1 database.
+

@@ -1,0 +1,39 @@
+dev file system
+
+all of the devices in the systems are stored
+kernel , os , places entries inside dev so we can access these devices.
+
+sda - device name for hard disk
+cdrom
+cpu
+disk
+
+
+ls /dev
+
+
+another entry
+
+ls /proc
+
+proc file system has lot of numbers
+these correspond to process id running processes
+
+the very first process is called init
+it has a number 1
+
+
+cd /proc/1
+
+sudo cat cmdline
+
+
+cd /sys
+
+sys directory is where we can get to a lot of settings that exist within linux
+
+sudo cat kexec_crash_loaded
+
+set to false 0
+
+sysctl

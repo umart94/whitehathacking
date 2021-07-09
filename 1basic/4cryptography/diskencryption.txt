@@ -1,0 +1,4 @@
+pgp has diskencryption
+
+gdecrypt - create encrypted volumes in ubuntu
+

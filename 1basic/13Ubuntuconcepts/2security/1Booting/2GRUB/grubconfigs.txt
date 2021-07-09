@@ -1,0 +1,46 @@
+in /etc/grub.d
+
+there are alphabetical files..
+
+so for e.g 00_header file
+
+has scripts
+
+these scripts , tell us the actual config file for grub
+
+sudo grub-mkconfig
+
+make config is going to take all config files
+generate a single configuration file
+
+that config file is in /boot/grub
+
+this grub.cfg is actually a script
+instead of a configuration file..
+
+
+to specify different os's that we are going to load up
+
+
+menuentry : kernels installed on the system
+when we boot up, we get this menu option
+
+passes boot linux disk image with uuid
+
+ro = means readonly
+quiet = means quiet mode.
+
+single user mode
+
+same kernel different parameters can be edited.
+
+we can go into the menu
+and edit each line of the menu entry.
+
+
+
+
+
+
+
+

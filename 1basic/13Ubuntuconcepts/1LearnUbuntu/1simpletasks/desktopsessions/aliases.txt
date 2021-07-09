@@ -1,0 +1,12 @@
+ls -la
+
+
+alias ll='ls -la'
+
+rm *
+
+alias rm='rm -i'
+
+rmdir ( remove directory)
+
+alias t='top'

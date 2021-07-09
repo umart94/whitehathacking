@@ -1,0 +1,5 @@
+sudo apt install sdparm
+
+In addition to the accepted answer, I would like to mention that you can use thesdparm utility with SCSI disks. Install with sudo apt install sdparm
+
+Get all parameters/settings with sudo sdparm -l -a /dev/sdX Here -a gets all output fields and -l gets the long output i.e. explanation of the output fields.

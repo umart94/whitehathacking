@@ -1,0 +1,25 @@
+in addition to setting up bios passwords.
+
+we can also setup passwords on the bootloader.
+
+
+#this is really a script that we are using - in which we are setting an environment variable
+
+#set superusers="me"
+#password me Password123
+#export superusers
+#password me1 password123
+#password me2 password234
+
+#make seperate users be able to boot into seperate operating systems.
+
+
+#edit  menu entries, and boot any operating system.
+
+
+
+
+after making these changes inside /etc/grub.d
+
+
+run sudo update-grub

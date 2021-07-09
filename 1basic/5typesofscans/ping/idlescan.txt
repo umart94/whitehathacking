@@ -1,0 +1,13 @@
+we use a system that is not doing anything in network activity
+we bounce network traffic off this idle system
+
+to determine whether ports are open or not.
+
+target system is going to reply to the idle system
+we can see the ip headers whether it has incremented or not incremented.
+
+sudo nmap -Pn -sI 192.168.100.1(idle) 192.168.100.22(target)
+
+sudo nmap -sX 192.168.1.22(target)
+
+sudo nmap -sF 192.168.1.22(target)

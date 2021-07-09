@@ -1,0 +1,42 @@
+open main.cf
+
+1. in mynetworks add our local network 192.168.100.0/24
+2. keep the smtpd_relay_restrictions section as follows :
+
+smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
+
+3. add a section called
+
+smtpd_helo_restrictions
+
+below
+
+smtpd_relay_restrictions
+
+in 
+smtpd_helo_restrictions
+
+keep it as follows : 
+smtp
+or esmtp
+
+has ehlo or helo
+
+so, what we can do is 
+
+smtpd_helo_restrictions = permit_mynetworks, reject_non_fqdn_hostname, reject_invalid_hostname, permit
+
+4.
+
+smtpd_sender_restrictions = permit_sasl_authenticated, permit_mynetworks, reject_non_fqdn_sender, permit
+
+
+5.
+
+smtpd_recipient_restrictions = permit_mynetworks, permit_sasl_authenticated, reject_rbl_client relays.ordb.org, reject_rbl_client list.dsbl.org, permit
+
+stop people from unauth use of our mail server.
+
+use greylisting
+use sender policy.
+

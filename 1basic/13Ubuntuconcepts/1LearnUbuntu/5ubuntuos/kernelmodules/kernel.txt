@@ -1,0 +1,21 @@
+linux is kernel
+provides software between what we see and the hardware beneath.
+
+ability to install additional software inside the OS.
+
+cd /lib/modules/version
+
+first enter uname -r
+5.4.0-40-generic is our linux kernel
+
+the software that we can install in kernel is installed at the layer that can interact with hardware.
+
+cd 5.4.0-40-generic
+cd kernel
+
+
+lsmod
+lsmod is a command on Linux systems. It shows which loadable kernel modules are currently loaded.
+
+sudo insmod nameofmodule.
+sudo rmmod 88pm860x_battery

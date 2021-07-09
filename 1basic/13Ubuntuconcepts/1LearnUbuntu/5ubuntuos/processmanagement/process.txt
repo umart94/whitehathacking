@@ -1,0 +1,28 @@
+running instance of a program
+
+process entry in process table in OS
+
+
+ps - process statistics
+
+within context of terminal window
+
+
+ps a
+
+
+ps eaf 
+
+ps aux 
+this command shows all of processes running on system
+
+
+
+
+
+
+ps aux | grep firefox
+
+
+top command will automatically keep on updating
+

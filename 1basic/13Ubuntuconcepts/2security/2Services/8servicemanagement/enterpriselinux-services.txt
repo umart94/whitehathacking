@@ -1,0 +1,17 @@
+sudo systemctl
+shows a list of all services running on system.
+
+
+systemctl manages all of these, . for distinguishing between them.
+.service - a service
+.device - device
+.mount 
+
+
+sudo systemctl is-enabled sshd.service
+sudo systemctl disable sshd.service
+sudo systemctl enable sshd.service
+sudo systemctl stop sshd.service
+sudo systemctl status sshd.service
+sudo systemctl start sshd.service
+sudo systemctl restart sshd.service
